@@ -1,0 +1,25 @@
+:root {
+  /* CSS HEX */
+  --opal: #a7c5c1;
+  --new-york-pink: #cd8987;
+  --english-violet: #4d2d52;
+  --deep-space-sparkle: #4d6a6d;
+  --saffron: #e1bc29;
+  --off-white: #000000;
+}
+
+body {
+  background-color: var(--opal);
+  background-image: url("wp_bground.png");
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
