@@ -11,7 +11,7 @@
 }
 
 body {
-  padding: 15px;
+  padding: 1% 25% 5% 15%; /* up right down left */
   background-color: var(--opal);
   background-image: url("wp_bground.png");
   margin: 0;
@@ -37,7 +37,6 @@ code {
 .center-p {
   margin: auto;
   padding: 15px;
-  width: 30%;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -52,4 +51,64 @@ code {
 
 .sub-li {
   font-size: 10pt;
+}
+
+.codepen {
+  max-width: 500px;
+  margin: auto;
+}
+
+
+
+/* TABS CSS
+ * big thanks to mikestreety on CodePen
+ * for the basis of this tab system!
+ * https://codepen.io/mikestreety/pen/yVNNNm */
+.tabs {
+	display: flex;
+	flex-wrap: wrap; // make sure it wraps
+}
+.tabs .tab-label {
+	order: 1; /* Put the labels first */
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+  border-radius: 25px 25px 0px 0px;
+	cursor: pointer;
+  background: var(--deep-space-sparkle);
+  color: var(--off-white);
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; /* Put the tabs last */
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: var(--off-white);
+  border-radius: 0px 25px 25px 25px;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+  color: #000000;
+  border-radius: 25px 25px 0px 0px;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
 }
