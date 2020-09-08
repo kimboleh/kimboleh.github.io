@@ -40,6 +40,14 @@ code {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.icon-bar {
+  position: fixed;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  bottom: 0;
+  left: 0;
+}
+
 .right-margin {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 15px;
@@ -47,6 +55,7 @@ code {
   top: 0;
   right: 0;
   width: 20%;
+  height: 100%;
 }
 
 .sub-li {
@@ -66,7 +75,7 @@ code {
  * https://codepen.io/mikestreety/pen/yVNNNm */
 .tabs {
 	display: flex;
-	flex-wrap: wrap; // make sure it wraps
+	flex-wrap: wrap; /* make sure it wraps */
 }
 .tabs .tab-label {
 	order: 1; /* Put the labels first */

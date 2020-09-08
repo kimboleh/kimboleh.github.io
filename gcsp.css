@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+  /* CSS HEX */
+  --opal: #a7c5c1;
+  --new-york-pink: #cd8987;
+  --english-violet: #4d2d52;
+  --deep-space-sparkle: #4d6a6d;
+  --saffron: #e1bc29;
+  --off-white: #FFFFFF;
+}
+
+body {
+  padding: 10px;
+  background-color: var(--opal);
+  background-image: url("wp_bground.png");
+  margin: 0;
+  font-family: 'Lora', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#title {
+  font-size: 18pt;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.center-p {
+  margin: auto;
+  width: 75%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon-bar {
+  position: fixed;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  bottom: 0;
+  left: 0;
+}
