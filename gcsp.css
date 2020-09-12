@@ -28,24 +28,99 @@ code {
 
 #sidebar {
   position: fixed;
-  font-size: 1.5vw;
   vertical-align: top;
-  width: 400px;
+  width: 325px;
   height: 100%;
+  top: 0;
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.4);
   text-align: center;
   background-color: var(--off-white);
 }
 
+#sidebar h1 {
+  font-weight: 800;
+  font-size: 36pt;
+  color: #111;
+}
+
+#sidebar h2 {
+  font-weight: 400;
+  font-size: 16pt;
+  color: #444;
+}
+
+.sidebar-link {
+  left: 0;
+  text-align: left;
+  padding: 20px;
+  padding-left: 35px;
+  border-left: 8px solid hsla(0, 0%, 0%, 0);
+}
+
+div.sidebar-link a {
+  font-weight: 400;
+  font-size: 24pt;
+  text-decoration: none;
+  color: #444;
+}
+
+div.sidebar-link:hover {
+  background-color: hsla(0, 0%, 0%, 0.05);
+  border-left: 8px solid var(--opal);
+}
+
+.sidebar-current {
+  font-weight: 500;
+  color: #111;
+  background-color: hsla(0, 0%, 0%, 0.1);
+  padding-left: -5px;
+  border-left: 8px solid var(--opal);
+}
+
+#challenge-squares {
+  margin: 100px;
+  display: grid;
+  grid-gap: 50px;
+  margin-left: 415px;
+}
+
 .center-p {
   margin: auto;
-  margin-left: 405px;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.gc-title {
-  font-size: 1.5vw;
+.center-p p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.grand-challenge {
+  height: 27vw;
+  width: 27vw;
+}
+
+.grand-challenge h1 {
   color: var(--deep-space-sparkle);
+}
+
+.grand-challenge p {
+  max-height: 400px;
+}
+
+.grand-challenge img {
+  float: left;
+  margin: 20px;
+}
+
+.water {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.learning {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 @media screen and (max-width: 800px) {
@@ -55,7 +130,22 @@ code {
     position: relative;
   }
 
+  #challenge-squares {
+    margin: 100px;
+    display: grid;
+    grid-gap: 50px;
+    margin-left: auto;
+  }
+
   .center-p {
     margin: auto;
+  }
+
+  .water {
+    grid-row-start: 1;
+  }
+
+  .learning {
+    grid-row-start: 2;
   }
 }
