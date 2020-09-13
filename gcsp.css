@@ -77,22 +77,36 @@ div.sidebar-link:hover {
   border-left: 8px solid var(--opal);
 }
 
+#body {
+  margin: 25px 100px 50px 415px; /* up right down left */
+}
+
+#profile-pic {
+  max-height: 275px;
+  float: right;
+  top: 0;
+  margin: 0 0 10px 20px; /* up right down left */
+}
+
 #challenge-squares {
-  margin: 100px;
+  margin-top: 50px;
   display: grid;
   grid-gap: 50px;
-  margin-left: 415px;
 }
 
 .center-p {
   margin: auto;
-  padding: 15px;
+  padding: 10px 30px 10px 30px; /* up right down left */
   background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 2px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .center-p p {
-  padding: 15px;
   text-align: justify;
+}
+
+.center-p h1 {
+  color: var(--deep-space-sparkle);
 }
 
 .grand-challenge {
@@ -110,7 +124,7 @@ div.sidebar-link:hover {
 
 .grand-challenge img {
   float: left;
-  margin: 20px;
+  margin: 20px 20px 20px 0px; /* up right down left */
 }
 
 .water {
@@ -123,6 +137,8 @@ div.sidebar-link:hover {
   grid-column-end: 3;
 }
 
+
+/* MOBILE */
 @media screen and (max-width: 800px) {
   #sidebar {
     width: 100%;
