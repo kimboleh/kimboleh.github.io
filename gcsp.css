@@ -62,6 +62,11 @@ code {
   border-left: 8px solid hsla(0, 0%, 0%, 0);
 }
 
+.sub {
+  width: 70%;
+  float: right;
+}
+
 div.sidebar-link {
   font-weight: 400;
   font-size: 24pt;
@@ -69,9 +74,15 @@ div.sidebar-link {
   color: #444;
 }
 
+div.sub {
+  font-weight: 500;
+  font-size: 18pt;
+  color: #666;
+}
+
 div.sidebar-link:hover {
   background-color: hsla(0, 0%, 0%, 0.05);
-  border-left: 8px solid var(--opal);
+  border-left: 8px solid var(--new-york-pink);
 }
 
 .sidebar-current {
