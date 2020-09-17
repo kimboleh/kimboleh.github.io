@@ -10,22 +10,6 @@
   --off-white: #FFFFFF;
 }
 
-body {
-  background-color: var(--opal);
-  background-image: url("wp_bground.png");
-  margin: 0;
-  font-family: 'Lora', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 #grid-layout {
   display: grid;
   grid-template-columns: 325px auto auto auto auto;
@@ -43,53 +27,6 @@ code {
   text-align: center;
   background-color: var(--off-white);
 }
-
-#sidebar h1 {
-  font-weight: 800;
-  font-size: 36pt;
-  color: #111;
-}
-
-#sidebar h2 {
-  font-weight: 400;
-  font-size: 16pt;
-  color: #444;
-}
-
-#sidebar a {
-  text-decoration: none;
-  color: var(--deep-space-sparkle);
-}
-
-.sidebar-link {
-  left: 0;
-  text-align: left;
-  padding: 20px;
-  padding-left: 35px;
-  border-left: 8px solid hsla(0, 0%, 0%, 0);
-}
-
-div.sidebar-link {
-  font-weight: 400;
-  font-size: 24pt;
-  text-decoration: none;
-  color: #444;
-}
-
-div.sidebar-link:hover {
-  background-color: hsla(0, 0%, 0%, 0.05);
-  border-left: 8px solid var(--new-york-pink);
-}
-
-.sidebar-current {
-  font-weight: 500;
-  color: #111;
-  background-color: hsla(0, 0%, 0%, 0.1);
-  padding-left: -5px;
-  border-left: 8px solid var(--opal);
-}
-
-
 
 #main-content {
   grid-column-start: 2;
@@ -113,21 +50,6 @@ div.sidebar-link:hover {
 #welcome-splash {
   margin: 20px auto;
   max-width: 60%;
-}
-
-.center-p {
-  margin: auto;
-  padding: 10px 30px 10px 30px; /* up right down left */
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 2px 2px 0 hsla(0, 0%, 0%, 0.2);
-}
-
-.center-p p {
-  text-align: justify;
-}
-
-.center-p h1 {
-  color: var(--deep-space-sparkle);
 }
 
 .icon-bar {
