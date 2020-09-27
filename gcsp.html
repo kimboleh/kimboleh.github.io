@@ -7,46 +7,61 @@
     <link rel="stylesheet" href="gcsp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-      name="Grand Challenge Scholars Program"
-      content="STEM Student Portfolio"
+      name="Kimberly's GitHub Page"
+      content="HTML & CSS webpage hosted on GitHub Pages"
     />
-    <title>Grand Challenge Scholars Program</title>
+    <title>Kimberly's GitHub Page</title>
   </head>
 
   <body>
-    <div id="sidebar">
-      <h1>kimberly horton</h1>
-      <h2>Grand Challenge Scholars Program</h2>
-      <a href="index.html"><div class="sidebar-link">Home</div></a>
-      <a href="gcsp.html"><div class="sidebar-link sidebar-current">GCSP</div></a>
-      <a href="problem.html"><div class="sub sidebar-link">The Problem</div></a>
-      <a href="software.html"><div class="sub sidebar-link">The Software</div></a>
-    </div>
+    <div id="grid-layout">
 
-    <div id="body">
-        <div id="challenge-squares">
-        <div class="grand-challenge water center-p">
-          <img src="img/water.png" height=50px>
-          <h1>Provide Access to Clean Water</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat quis urna sodales aliquam. Duis ipsum sem, porta sed maximus nec, efficitur id ipsum. Maecenas malesuada leo volutpat justo pellentesque posuere. In mauris augue, pulvinar id odio at, laoreet accumsan lacus. Sed imperdiet ex odio, dictum congue enim sagittis ut. Pellentesque at orci ut eros volutpat porttitor eget id sapien. Sed vitae eros diam. Praesent ut sem non purus volutpat mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec dapibus velit in erat pretium placerat.</p>
-        </div>
-
-        <div class="grand-challenge learning center-p">
-          <img src="img/learning.png" height=50px>
-          <h1>Advance Personalized Learning</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat quis urna sodales aliquam. Duis ipsum sem, porta sed maximus nec, efficitur id ipsum. Maecenas malesuada leo volutpat justo pellentesque posuere. In mauris augue, pulvinar id odio at, laoreet accumsan lacus. Sed imperdiet ex odio, dictum congue enim sagittis ut. Pellentesque at orci ut eros volutpat porttitor eget id sapien. Sed vitae eros diam. Praesent ut sem non purus volutpat mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec dapibus velit in erat pretium placerat.</p>
-
-        </div>
+      <!-- SIDEBAR -->
+      <div id="sidebar">
+        <h1>kimberly horton</h1>
+        <h2>Grand Challenge Scholars Program</h2>
+        <a href="index.html"><div class="sidebar-link">Home</div></a>
+        <a href="gcsp.html"><div class="sidebar-link sidebar-current">GCSP</div></a>
+        <a href="problem.html"><div class="sub sidebar-link">The Problem</div></a>
+        <a href="software.html"><div class="sub sidebar-link">The Software</div></a>
       </div>
 
-      <div class="main-body">
-        <h1>Mission Statement</h1>
-        <img id="profile-pic" src="img/kimberly.jpg">
-        <p>I am a Christian, student, and programmer in Portland, Oregon with homes around the world in Malaysia, Jordan, and across the United States.</p>
-        <p>I am a lifelong follower of Christ, and I believe his call to serve the poor and underprivileged was meant to be taken seriously. I also believe there is great need in the humanitarian sector for technical experience to come alongside existing efforts in communication and fieldwork; I seek to use my technical experience to bring efficiency and new solutions to those already on the front lines fighting for justice and human flourishing.</p>
-        <p>Technology is a powerful tool, and I believe it should be harnessed and stewarded responsibly to the benefit of the world at large. I hope to be a part of the movements working for justice and against suffering by learning to steward technology rightly and using it to advance quality of life around the world.</p>
-      </div>
-    </div>
+      <!-- BODY -->
+      <div id="main-content">
+        <div class="main-body">
+          <!-- Mission Statement -->
+          <table id="mission">
+            <tr>
+              <td>
+                <h1>Mission Statement</h1>
+                <p>I am a Christian, student, and programmer in Portland, Oregon with homes around the world in Malaysia, Jordan, and across the United States.</p>
+                <p>I am a lifelong follower of Christ, and I believe his call to serve the poor and underprivileged was meant to be taken seriously. I also believe there is great need in the humanitarian sector for technical experience to come alongside existing efforts in communication and fieldwork; I seek to use my technical experience to bring efficiency and new solutions to those already on the front lines fighting for justice and human flourishing.</p>
+                <p>Technology is a powerful tool, and I believe it should be harnessed and stewarded responsibly to the benefit of the world at large. I hope to be a part of the movements working for justice and against suffering by learning to steward technology rightly and using it to advance quality of life around the world.</p>
+              </td>
+            <td><img id="profile-pic" src="img/kimberly.jpg"></td>
+          </tr></table>
+              <br>
+          <!-- Water & Learning Descriptions -->
+          <table id="waterAndLearning">
+            <tr>
+              <td>
+                <img id="water" src="img/water.png">
+                <h1>Provide Access to Clean Water</h1>
+                <p><strong>Lack of clean water is responsible for more deaths in the world than war.</strong> About 1 out of every 6 people living today do not have adequate access to water, and more than double that number lack basic sanitation, for which water is needed. In some countries, half the population does not have access to safe drinking water, and hence is afflicted with poor health. By some estimates, each day nearly 5,000 children worldwide die from diarrhea-related diseases, a toll that would drop dramatically if sufficient water for sanitation was available.</p>
+              </td>
+              <td>
+                <img id="learning" src="img/learning.png">
+                <h1>Advance Personalized Learning</h1>
+                <p>Throughout the educational system, teaching has traditionally followed a one-size-fits-all approach to learning, with a single set of instructions provided identically to everybody in a given class, regardless of differences in aptitude or interest. Similar inflexibility has persisted in adult education programs that ignore differences in age, cultural background, occupation, and level of motivation.</p>
+                <p>In recent years, a growing appreciation of individual preferences and aptitudes has led toward more “personalized learning,” in which instruction is tailored to a student’s individual needs. Personal learning approaches range from modules that students can master at their own pace to computer programs designed to match the way it presents content with a learner’s personality.</p>
+              </td>
+            </tr>
+          </table>
 
+        </div>
+
+      </div>
+
+    </div>
     </body>
 </html>

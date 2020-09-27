@@ -10,38 +10,6 @@
   --off-white: #FFFFFF;
 }
 
-#grid-layout {
-  display: grid;
-  grid-template-columns: 325px auto auto auto auto;
-  height: 100vh;
-  width: 100vw;
-}
-
-/* SIDEBAR CSS */
-#sidebar {
-  grid-column-start: 1;
-  grid-column-end: 2;
-
-  vertical-align: top;
-  box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.4);
-  text-align: center;
-  background-color: var(--off-white);
-}
-
-#main-content {
-  grid-column-start: 2;
-  grid-column-end: 6;
-
-  margin: 0 50px; /* up right down left */
-  overflow: auto;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-#main-content::-webkit-scrollbar {
-  display: none;
-}
-
 #tabs {
   max-width: 50%;
   margin: auto;
