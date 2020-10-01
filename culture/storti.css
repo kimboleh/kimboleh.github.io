@@ -1,7 +1,22 @@
 #storti-banner {
   display: block;
   margin-left: 10px;
-  padding: 10px;
+  padding-top: 30px;
+  padding-left: 10px;
   float: right;
   width: 60%;
+}
+
+#clock {
+  display: block;
+  float: left;
+  padding: 30px;
+  width: 300px;
+}
+
+#teacher {
+  display: block;
+  padding-left: 30px;
+  float: right;
+  height: 300px;
 }

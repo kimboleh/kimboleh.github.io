@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  font-size: 10pt;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#flags {
+  display:block;
+  margin: auto;
+  width: 90%;
+}
+
+#cow {
+  display: block;
+  margin:auto;
+  width: 50%;
+}
