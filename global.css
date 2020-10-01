@@ -98,7 +98,7 @@ p {
 
 div.sidebar-link {
   font-weight: 400;
-  font-size: 24pt;
+  font-size: 22pt;
   text-decoration: none;
   color: #444;
 }
@@ -120,6 +120,12 @@ div.sidebar-link:hover {
   background-color: hsla(0, 0%, 0%, 0.1);
   padding-left: -5px;
   border-left: 8px solid var(--opal);
+}
+
+.wip {
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .main-body {
