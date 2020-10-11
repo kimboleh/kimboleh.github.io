@@ -1,0 +1,233 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	font: 75% Roboto, sans-serif;
+	line-height: 1.88889;
+	color: #555753;
+	background: url("https://opengameart.org/sites/default/files/seamless%20space_0.PNG");
+	margin: 0;
+	padding: 0;
+	}
+h3 {
+	color: #FFFFFF;
+}
+
+#zen-intro header {
+	left: 615px;
+  position: absolute;
+  top: 250px;
+	height: 200px;
+	width: 200px;
+	background-color: yellow;
+	color: black;
+	border-radius: 50%;
+}
+
+/* specific divs */
+.page-wrapper {
+	margin: 0;
+	position: relative;
+	height: 100%; width: 100%;
+	}
+
+.intro {
+	min-width: 470px;
+	width: 100%;
+	}
+
+.summary {
+	position: absolute;
+	right: 0; bottom: 0;
+	background-color: lightblue;
+	}
+
+/* planets begin */
+.preamble {
+	background-image: url("../img/mars.png");
+	background-size: 100px 100px;
+	height: 100px; width: 100px;
+
+	left: 670px;
+  position: absolute;
+  top: 280px;
+
+       -moz-animation: preamble-orbit 7s linear infinite; /* Firefox 5-15 */
+         -o-animation: preamble-orbit 7s linear infinite; /* Opera 12+ */
+            animation: preamble-orbit 7s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+	}
+	.preamble p {
+		font: italic 1.1em/2.2 georgia;
+		text-align: center;
+		display: none;
+		}
+	.preamble:hover p {
+		display: block;
+	}
+
+.explanation {
+	background-image: url("../img/jupiter.png");
+	background-size: 100px 100px;
+	height: 100px; width: 100px;
+
+	left: 670px;
+  position: absolute;
+  top: 280px;
+
+       -moz-animation: explanation-orbit 10s linear infinite; /* Firefox 5-15 */
+         -o-animation: explanation-orbit 10s linear infinite; /* Opera 12+ */
+            animation: explanation-orbit 10s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+}
+.explanation p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	display: none;
+	}
+.explanation:hover p {
+	display: block;
+}
+
+.participation {
+	background-image: url("../img/saturn.png");
+	background-size: 200px 120px;
+	height: 120px; width: 200px;
+
+	left: 650px;
+  position: absolute;
+  top: 280px;
+
+       -moz-animation: participation-orbit 12s linear infinite; /* Firefox 5-15 */
+         -o-animation: participation-orbit 12s linear infinite; /* Opera 12+ */
+            animation: participation-orbit 12s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+}
+.participation p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	display: none;
+	}
+.participation:hover p {
+	display: block;
+}
+
+.benefits {
+	background-image: url("../img/neptune.ico");
+	background-size: 90px 90px;
+	height: 90px; width: 90px;
+
+	left: 670px;
+  position: absolute;
+  top: 300px;
+
+       -moz-animation: benefits-orbit 20s linear infinite; /* Firefox 5-15 */
+         -o-animation: benefits-orbit 20s linear infinite; /* Opera 12+ */
+            animation: benefits-orbit 20s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+}
+.benefits p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	display: none;
+	}
+.benefits:hover p {
+	display: block;
+}
+
+.requirements {
+	background-image: url("../img/pluto.png");
+	background-size: 50px 50px;
+	height: 50px; width: 50px;
+
+	left: 700px;
+  position: absolute;
+  top: 325px;
+
+       -moz-animation: requirements-orbit 30s linear infinite; /* Firefox 5-15 */
+         -o-animation: requirements-orbit 30s linear infinite; /* Opera 12+ */
+            animation: requirements-orbit 30s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+}
+.requirements p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	display: none;
+	}
+.requirements:hover p {
+	display: block;
+	right: 0; top: 0;
+	width: 200px;
+}
+
+footer {
+	text-align: center;
+	}
+footer a:link, footer a:visited {
+	margin-right: 20px;
+	}
+
+
+/* CSS ANIMATION - TAKEN PARTLY FROM:
+* https://www.useragentman.com/blog/2013/03/03/animating-circular-paths-using-css3-transitions/ */
+
+@-moz-keyframes preamble-orbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); } }
+@-o-keyframes preamble-orbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); } }
+@keyframes preamble-orbit {
+    from { transform: rotate(0deg) translateX(180px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(180px) rotate(-360deg); } }
+
+@-moz-keyframes explanation-orbit {
+    from { -moz-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@-o-keyframes explanation-orbit {
+    from { -o-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@keyframes explanation-orbit {
+    from { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+
+@-moz-keyframes participation-orbit {
+    from { -moz-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@-o-keyframes participation-orbit {
+    from { -o-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@keyframes participation-orbit {
+    from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); } }
+
+@-moz-keyframes benefits-orbit {
+    from { -moz-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@-o-keyframes benefits-orbit {
+    from { -o-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@keyframes benefits-orbit {
+    from { transform: rotate(0deg) translateX(350px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(350px) rotate(-360deg); } }
+
+@-moz-keyframes requirements-orbit {
+    from { -moz-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@-o-keyframes requirements-orbit {
+    from { -o-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(250px) rotate(-360deg); } }
+@keyframes requirements-orbit {
+    from { transform: rotate(0deg) translateX(380px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(380px) rotate(-360deg); } }

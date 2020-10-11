@@ -105,8 +105,10 @@ div.sidebar-link {
 
 div.sub {
   font-weight: 500;
-  font-size: 18pt;
+  font-size: 16pt;
   color: #666;
+  height: 30px;
+  padding: 10px;
 }
 
 div.sidebar-link:hover {
