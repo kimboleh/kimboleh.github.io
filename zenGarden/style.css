@@ -1,11 +1,7 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 /* basic elements */
 html {
@@ -13,8 +9,7 @@ html {
 	padding: 0;
 	}
 body {
-	font: 75% Roboto, sans-serif;
-	line-height: 1.88889;
+	font: 100% 'Play', sans-serif;
 	color: #555753;
 	background: url("https://opengameart.org/sites/default/files/seamless%20space_0.PNG");
 	margin: 0;
@@ -23,16 +18,29 @@ body {
 h3 {
 	color: #FFFFFF;
 }
+p {
+	background-color: #FFFFFF;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 300px;
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	display: none;
+}
 
 #zen-intro header {
+	background-image: url("../img/sun.png");
+	background-size: 200px 200px;
 	left: 615px;
   position: absolute;
   top: 250px;
 	height: 200px;
 	width: 200px;
-	background-color: yellow;
-	color: black;
-	border-radius: 50%;
+
+	color: #FFFFFF;
+	font: 'Play';
+	font-weight: 700;
 }
 
 /* specific divs */
@@ -68,11 +76,6 @@ h3 {
             animation: preamble-orbit 7s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
 	}
-	.preamble p {
-		font: italic 1.1em/2.2 georgia;
-		text-align: center;
-		display: none;
-		}
 	.preamble:hover p {
 		display: block;
 	}
@@ -91,11 +94,6 @@ h3 {
             animation: explanation-orbit 10s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
 }
-.explanation p {
-	font: italic 1.1em/2.2 georgia;
-	text-align: center;
-	display: none;
-	}
 .explanation:hover p {
 	display: block;
 }
@@ -114,11 +112,6 @@ h3 {
             animation: participation-orbit 12s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
 }
-.participation p {
-	font: italic 1.1em/2.2 georgia;
-	text-align: center;
-	display: none;
-	}
 .participation:hover p {
 	display: block;
 }
@@ -137,11 +130,6 @@ h3 {
             animation: benefits-orbit 20s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
 }
-.benefits p {
-	font: italic 1.1em/2.2 georgia;
-	text-align: center;
-	display: none;
-	}
 .benefits:hover p {
 	display: block;
 }
@@ -160,11 +148,6 @@ h3 {
             animation: requirements-orbit 30s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
 }
-.requirements p {
-	font: italic 1.1em/2.2 georgia;
-	text-align: center;
-	display: none;
-	}
 .requirements:hover p {
 	display: block;
 	right: 0; top: 0;
