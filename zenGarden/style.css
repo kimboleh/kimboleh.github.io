@@ -250,6 +250,8 @@ p {
 	animation-play-state: paused;
 }
 .requirements:hover p {
+	font-size: 10pt;
+	width: 500px;
 	display: block;
 }
 
