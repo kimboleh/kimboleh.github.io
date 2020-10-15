@@ -36,7 +36,7 @@ h3 {
 }
 p {
 	background-color: #FFFFFF;
-	width: 300px;
+	width: 450px;
 	left: 0; bottom: 0;
 	padding: 15px;
 	margin: 0;
@@ -77,11 +77,23 @@ p {
 
 .sidebar div {
 	float: left;
-	position: relative;
+	position: fixed;
+}
+
+.zen-resources {
+	margin-left: 575px;
+}
+
+.design-archives {
+	margin-left: 375px;
+}
+
+.design-selection {
+	margin-left: 75px;
 }
 
 .sidebar nav {
-	visibility: hidden;
+	display: none;
 }
 
 .sidebar ul {
@@ -92,23 +104,19 @@ p {
 }
 
 .zen-resources ul {
-	visibility: hidden;
+	display: none;
 }
 
-.zen-resources {
-	margin-left: 75px;
+.design-selection:hover nav {
+	display: block;
 }
 
-.design-selection:hover ul {
-	visibility: visible;
-}
-
-.design-archives:hover ul {
-	visibility: visible;
+.design-archives:hover nav {
+	display: block;
 }
 
 .zen-resources:hover ul {
-	visibility: visible;
+	display: block;
 }
 
 /* specific divs */
@@ -139,10 +147,15 @@ p {
   position: absolute;
   top: 280px;
 
-       -moz-animation: preamble-orbit 7s linear infinite; /* Firefox 5-15 */
-         -o-animation: preamble-orbit 7s linear infinite; /* Opera 12+ */
-            animation: preamble-orbit 7s linear infinite; /* Chrome, Firefox 16+,
-                                                      IE 10+, Safari 5 */
+   -moz-animation: preamble-orbit 7s linear infinite; /* Firefox 5-15 */
+     -o-animation: preamble-orbit 7s linear infinite; /* Opera 12+ */
+        animation: preamble-orbit 7s linear infinite; /* Chrome, Firefox 16+,
+                                                  IE 10+, Safari 5 */
+}
+	.preamble:hover {
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 	}
 	.preamble:hover p {
 		display: block;
@@ -162,6 +175,11 @@ p {
             animation: explanation-orbit 10s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
 }
+.explanation:hover {
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
 .explanation:hover p {
 	display: block;
 }
@@ -179,6 +197,11 @@ p {
          -o-animation: participation-orbit 12s linear infinite; /* Opera 12+ */
             animation: participation-orbit 12s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
+}
+.participation:hover {
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
 }
 .participation:hover p {
 	display: block;
@@ -198,6 +221,11 @@ p {
             animation: benefits-orbit 20s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
 }
+.benefits:hover {
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
 .benefits:hover p {
 	display: block;
 }
@@ -215,6 +243,11 @@ p {
          -o-animation: requirements-orbit 30s linear infinite; /* Opera 12+ */
             animation: requirements-orbit 30s linear infinite; /* Chrome, Firefox 16+,
                                                       IE 10+, Safari 5 */
+}
+.requirements:hover {
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
 }
 .requirements:hover p {
 	display: block;
