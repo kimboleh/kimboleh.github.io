@@ -20,6 +20,14 @@
   max-width: 60%;
 }
 
+#monika {
+  opacity: 0.5;
+  font-size: 8pt;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
 .icon-bar {
   position: fixed;
   padding-left: 3px;
