@@ -23,10 +23,28 @@
           <li data-target="#carouselDiv" data-slide-to="2"></li>
           <li data-target="#carouselDiv" data-slide-to="3"></li>
           <li data-target="#carouselDiv" data-slide-to="4"></li>
+          <li data-target="#carouselDiv" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner">
 
           <div class="carousel-item active">
+            <img src="bground.png" class="d-block w-100 h-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Welcome to D&D Combat!</h3>
+              <p>I love <em>Dungeons & Dragons</em>; the thing is, I don't super love
+              the formatting of the character sheets.</p>
+              <p>One of my biggest annoyances is in-game combat. I don't have all my character's
+              spells memorized (<em>I know, I know, I guess I'm not a real gamer</em>), and those are
+              on a separate page from my weapons, which are on a separate page from my feats &
+              miscellaneous abilities - all of which I'd like to be able to see in front of me
+              when I'm figuring out what to do for my next turn.</p>
+              <p>Enter: this web app! Just enter your character's stats, select the proper spells,
+              and you'll have everything you need for combat laid nicely in front of you.</p>
+              <p>Press the right arrow to get started.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
             <img src="bground.png" class="d-block w-100 h-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h2>Enter Your Character Name:</h2>
@@ -72,8 +90,7 @@
           <div class="carousel-item">
             <img src="bground.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <p><em>Coming soon: weapons, class features, and more specialized magic components
-                (i.e. Ki points, Sorcery points, spell books, etc.)</em></p>
+              <br><br><br><br><br>
 
               <p>Ready to go?</p>
               <button id="submitAll">Let's Go!</button>
@@ -97,8 +114,10 @@
       <div id="charName"></div>
       <div id="charLvl"></div>
       <div id="charClass"></div>
-      <div id="charSpells"></div>
+      <div id="charSpells"><h2>Spells</h2></div>
       <div id="charWeapons"></div>
+      <p><em>Coming soon: weapons, class features, and more specialized magic components
+        (i.e. Ki points, Sorcery points, spell books, etc.)</em></p>
     </div>
   </body>
 </html>
