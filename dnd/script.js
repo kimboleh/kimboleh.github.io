@@ -30,7 +30,9 @@ $(document).ready(function () {
     $('input[type=checkbox]:checked').each(function () {
       for(spell of spells) {
         if (JSON.parse(spell).index == this.value) {
-          $('#charSpells').append(JSON.parse(spell).name + "<br>" + JSON.parse(spell).desc + "<br>");
+          $('#charSpells').append("<h3>" + JSON.parse(spell).name + "</h3>"
+            + "<p>" + JSON.parse(spell).desc + "</p>"
+          );
         }
         // console.log(JSON.parse(spell).desc);
       }
