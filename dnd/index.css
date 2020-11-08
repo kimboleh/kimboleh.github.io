@@ -82,13 +82,14 @@ ul {
 }
 
 #charLvl {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
 
   padding: 10px;
   font-size: 1.5rem;
+  color: var(--Metallic);
 }
 
 #charClass {
@@ -100,6 +101,7 @@ ul {
   padding: 10px;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
+  color: var(--Metallic);
 }
 
 #charSpells {
@@ -114,6 +116,11 @@ ul {
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+}
+
+#charSpells p {
+  font-size: 1rem;
+  color: var(--Metallic);
 }
 
 #charWeapons {
