@@ -45,7 +45,7 @@ p {
   grid-column-end: 6;
 
   margin: 0 50px; /* up right down left */
-  padding: 20px;
+  padding: 45px;
   overflow: auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -132,7 +132,7 @@ div.sidebar-link:hover {
 
 .main-body {
   margin: auto;
-  padding: 10px 40px 10px 40px; /* up right down left */
+  padding: 30px 65px 30px 65px; /* up right down left */
   background-color: #FFFFFF;
   color: #222;
   box-shadow: 0 0 3px 0 hsla(0, 0%, 0%, 0.4);

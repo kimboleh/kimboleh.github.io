@@ -10,49 +10,24 @@
   --off-white: #FFFFFF;
 }
 
-#mission td {
-  vertical-align: center;
-  padding: 25px;
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(77, 106, 109, 0), rgba(77, 106, 109, 0.75), rgba(77, 106, 109, 0));
 }
 
-#waterAndLearning td {
-  vertical-align: top;
-  padding: 25px;
-  width: 50%;
+#mission td {
+  vertical-align: center;
 }
 
 #profile-pic {
   max-height: 275px;
-  padding-top: 10px;
-}
-
-#water, #learning {
-  height: 50px;
-  float: left;
-  margin-right: 10px;
+  padding: 10px;
+  padding-top: 50px;
 }
 
 .mission-header {
   color: #000000;
-}
-
-.grand-challenge {
-  height: 27vw;
-  width: 27vw;
-  margin-bottom: 20px;
-}
-
-.grand-challenge h1 {
-  color: var(--deep-space-sparkle);
-}
-
-.grand-challenge p {
-  max-height: 400px;
-}
-
-.grand-challenge img {
-  float: left;
-  margin: 20px 20px 20px 0px; /* up right down left */
 }
 
 
@@ -64,22 +39,8 @@
     position: relative;
   }
 
-  #challenge-squares {
-    margin: 100px;
-    display: grid;
-    grid-gap: 50px;
-    margin-left: auto;
-  }
-
   .center-p {
     margin: auto;
   }
 
-  .water {
-    grid-row-start: 1;
-  }
-
-  .learning {
-    grid-row-start: 2;
-  }
 }

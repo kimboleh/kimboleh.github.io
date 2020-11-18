@@ -1,0 +1,45 @@
+#challenge-squares {
+  margin: 100px;
+  display: grid;
+  grid-gap: 50px;
+  margin-left: auto;
+}
+
+#water, #learning {
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+#waterAndLearning td {
+  vertical-align: top;
+  padding: 25px;
+  width: 50%;
+}
+
+.grand-challenge {
+  height: 27vw;
+  width: 27vw;
+  margin-bottom: 20px;
+}
+
+.grand-challenge h1 {
+  color: var(--deep-space-sparkle);
+}
+
+.grand-challenge p {
+  max-height: 400px;
+}
+
+.grand-challenge img {
+  float: left;
+  margin: 20px 20px 20px 0px; /* up right down left */
+}
+
+.water {
+  grid-row-start: 1;
+}
+
+.learning {
+  grid-row-start: 2;
+}
