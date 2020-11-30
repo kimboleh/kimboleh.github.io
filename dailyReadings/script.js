@@ -14,6 +14,7 @@ $(document).ready(function () {
 
 /* gets reading from a given date */
 jQuery.fn.getReadings = function (data) {
+  console.log("it's an update");
   $.ajax({
       type: 'GET',
       url: "https://www.ewtn.com/se/readings/readingsservice.svc/day/" + data,
