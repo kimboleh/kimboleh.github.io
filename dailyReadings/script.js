@@ -14,8 +14,8 @@ $(document).ready(function () {
 
 /* gets reading from a given date */
 jQuery.fn.getReadings = function (data) {
-
-  $.getJSON("https://www.ewtn.com/se/readings/readingsservice.svc/day/" + data,
+  var url = "https://www.ewtn.com/se/readings/readingsservice.svc/day/";
+  $.getJSON(url + data,
     function (json_data) {
       readings = json_data.ReadingGroups[0].Readings;
       color = json_data.Color;
