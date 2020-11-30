@@ -14,24 +14,27 @@ $(document).ready(function () {
 
 /* gets reading from a given date */
 jQuery.fn.getReadings = function (data) {
-  var url = "https://www.ewtn.com/se/readings/readingsservice.svc/day/";
-  $.getJSON(url + data,
-    function (json_data) {
-      readings = json_data.ReadingGroups[0].Readings;
-      color = json_data.Color;
-      title = json_data.Title;
+  $.ajax({
+      type: 'GET',
+      url: "https://www.ewtn.com/se/readings/readingsservice.svc/day/" + data,
+      success: function(resp) {
+        readings = resp.ReadingGroups[0].Readings;
+        color = resp.Color;
+        title =resp.Title;
 
-      for (reading of readings) {
-        $('#readings').append("<h2>" + reading.Type + "</h2>" + "<hr/>");
-        $('#readings').append("<h3>" + reading.Citations[0].Reference + "</h3>");
-        $('#readings').append("<p id='" + reading.Type.split(" ").join("") + "'></p>");
-        $.fn.getScripture(reading);
-      }
+        for (reading of readings) {
+          $('#readings').append("<h2>" + reading.Type + "</h2>" + "<hr/>");
+          $('#readings').append("<h3>" + reading.Citations[0].Reference + "</h3>");
+          $('#readings').append("<p id='" + reading.Type.split(" ").join("") + "'></p>");
+          $.fn.getScripture(reading);
+        }
 
-      $('#dateTitle').empty();
-      $('#dateTitle').append(title);
-      $('#title').css("color", color);
-  });
+        $('#dateTitle').empty();
+        $('#dateTitle').append(title);
+        $('#title').css("color", color);
+      },
+      error: function() {}
+    });
 };
 
 /* pulls the actual Scripture via Ajax call */
