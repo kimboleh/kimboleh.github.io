@@ -17,7 +17,7 @@ $(document).ready(function () {
 jQuery.fn.getReadings = function (data) {
   $.ajax({
       type: 'GET',
-      url: "https://www.ewtn.com/se/readings/readingsservice.svc/day/" + data,
+      url: "https://www.ewtn.com/se/readings/readingsservice.svc/day/" + data + "/",
       success: function(resp) {
         readings = resp.ReadingGroups[0].Readings;
         color = resp.Color;
