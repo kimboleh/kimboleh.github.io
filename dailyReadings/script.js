@@ -2,6 +2,9 @@ var today = new Date();
 var year = today.getFullYear();
 var month = today.getMonth() + 1;
 var day = today.getDate();
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+  "October", "November", "December"];
 var date = year + "-" + month + "-" + day;
 
 var readings = "";
@@ -30,6 +33,8 @@ jQuery.fn.getReadings = function (data) {
           $.fn.getScripture(reading);
         }
 
+        $('#dateText').empty();
+        $('#dateText').append(days[today.getDay()] + ", " + months[today.getMonth()] + " " + today.getDate());
         $('#dateTitle').empty();
         $('#dateTitle').append(title);
         $('#title').css("color", color);
