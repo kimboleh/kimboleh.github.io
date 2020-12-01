@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Daily Lectionary Readings"
+      content="HTML & CSS webpage hosted on GitHub Pages"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <title>Daily Readings | About</title>
+  </head>
+
+  <body>
+    <div id="grid-layout">
+
+      <!-- SIDEBAR -->
+      <div id="sidebar">
+        <h1 id="title">daily lectionary readings</h1>
+        <h2>About the Lectionary</h2>
+        <a href="index.html"><div class="sidebar-link">Readings</div></a>
+        <a href="/"><div class="sidebar-link sidebar-current">About</div></a>
+      </div>
+
+      <!-- BODY -->
+      <div id="main-content">
+        <div class="main-body">
+          <h1>What is the Lectionary?</h1>
+          <p>A lectionary, according to Wikipedia, is "a book or listing that contains a collection of
+            scripture readings appointed for Christian or Judaic worship on a given day or occasion."
+            Essentially, it's a calendar for when to read certain scriptures, like a year-round
+            reading plan.</p>
+          <p>Many of these lectionaries have been put together over centuries; among Christian circles,
+            a handful of widely-used lectionaries remain. The most widely-used and modified lectionary
+            is the Roman Catholic Mass Lectionary, which provides readings for Sunday Mass as well as
+            Daily Mass during the week - this site provides the RCML reading for the current day, with references
+            pulled from the <a href="https://www.ewtn.com/catholicism/daily-readings">EWTN daily readings</a>
+            and scripture pulled from <a href="https://bible-api.com/">Bible-API</a>.</p>
+
+          <h1>What do the colors mean?</h1>
+          <p>The primary background reflects the color of the current liturgical season: purple for Advent & Lent,
+            gold for Christmas & Easter, red for Holy Week & Pentecost, and green for Ordinary Time.</p>
+          <p>The color of the title also reflects the current liturgical season, with, red also signifying
+            a feast day (also signalled by a subtitle below the date in the sidebar.)</p>
+        </div>
+      </div>
+    </body>
+</html>
