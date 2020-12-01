@@ -86,7 +86,7 @@ p {
 .sidebar-link {
   left: 0;
   text-align: left;
-  padding: 16px;
+  padding: 10px;
   padding-left: 35px;
   border-left: 8px solid hsla(0, 0%, 0%, 0);
 }
