@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+  /* CSS HEX */
+  --opal: #a7c5c1;
+  --new-york-pink: #cd8987;
+  --english-violet: #4d2d52;
+  --deep-space-sparkle: #4d6a6d;
+  --saffron: #e1bc29;
+  --off-white: #fffaf1;
+}
+
+body {
+  background-color: var(--english-violet);
+  margin: 0;
+  font-family: 'Lora', 'Garamond', 'Times New Roman', Serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+h1 {
+  color: var(--deep-space-sparkle);
+}
+
+p {
+  text-align: justify;
+}
+
+#grid-layout {
+  display: grid;
+  grid-template-columns: 325px auto auto auto auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+#main-content {
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  margin: 0 50px; /* up right down left */
+  padding: 45px;
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#main-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* SIDEBAR CSS */
+#sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  vertical-align: top;
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.4);
+  text-align: center;
+  background-color: var(--off-white);
+}
+
+#sidebar h1 {
+  font-weight: 800;
+  font-size: 36pt;
+  color: #111;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: var(--deep-space-sparkle);
+}
+
+#dateText {
+  font-size: 18pt;
+}
+
+#dateTitle {
+  font-size: 14pt;
+  font-weight: 550;
+}
+
+.sidebar-link {
+  left: 0;
+  text-align: left;
+  padding: 16px;
+  padding-left: 35px;
+  border-left: 8px solid hsla(0, 0%, 0%, 0);
+}
+
+.sub {
+  width: 80%;
+  float: right;
+}
+
+div.sidebar-link {
+  font-weight: 400;
+  font-size: 22pt;
+  text-decoration: none;
+  color: #444;
+}
+
+div.sub {
+  font-weight: 500;
+  font-size: 16pt;
+  color: #666;
+  height: 30px;
+  padding: 10px;
+}
+
+div.sidebar-link:hover {
+  background-color: hsla(0, 0%, 0%, 0.05);
+  border-left: 8px solid var(--new-york-pink);
+}
+
+.sidebar-current {
+  font-weight: 500;
+  color: #111;
+  background-color: hsla(0, 0%, 0%, 0.1);
+  padding-left: -5px;
+  border-left: 8px solid var(--opal);
+}
+
+.main-body {
+  margin: auto;
+  padding: 30px 65px 30px 65px; /* up right down left */
+  max-width: 600px;
+  background-color: var(--off-white);
+  color: #222;
+  box-shadow: 0 0 3px 0 hsla(0, 0%, 0%, 0.4);
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .center-p {
+    margin: auto;
+  }
+}

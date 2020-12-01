@@ -12,7 +12,6 @@ var color = "";
 var title = "";
 
 $(document).ready(function () {
-  console.log("it's an update");
   $.fn.getReadings(date);
 });
 
