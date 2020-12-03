@@ -77,13 +77,15 @@ p {
   color: var(--deep-space-sparkle);
 }
 
-#dateText {
+#dateText h2 {
   font-size: 18pt;
+  font-weight: bold;
 }
 
-#dateTitle {
+#dateTitle h2 {
   font-size: 14pt;
   font-weight: 550;
+  padding: 5px;
 }
 
 .sidebar-link {
@@ -130,10 +132,14 @@ div.sidebar-link:hover {
 .main-body {
   margin: auto;
   padding: 30px 65px 30px 65px; /* up right down left */
-  max-width: 600px;
+  max-width: 700px;
   background-color: var(--off-white);
   color: #222;
   box-shadow: 0 0 3px 0 hsla(0, 0%, 0%, 0.4);
+}
+
+.tooltip {
+  z-index: 1011;
 }
 
 

@@ -16,6 +16,8 @@ $(document).ready(function () {
 });
 
 /* gets reading from a given date */
+/* uses the Bootstrap Javascript library for reading icons */
+/* I'm also trying to use their tooltips functionality, but it's... bugging out. */
 jQuery.fn.getReadings = function (data) {
   $.ajax({
       type: 'GET',
@@ -26,17 +28,30 @@ jQuery.fn.getReadings = function (data) {
         title =resp.Title;
 
         for (reading of readings) {
-          $('#readings').append("<h2>" + reading.Type + "</h2>" + "<hr/>");
+          if (reading.Type == "Gospel") {
+            $('#readings').append("<h2>" + "<span class='glyphicon glyphicon-certificate' aria-hidden='true'></span> "
+              + reading.Type + "</h2>" + "<hr/>");
+          } else if (reading.Type == "Psalm") {
+            $('#readings').append("<h2>" + "<span class='glyphicon glyphicon-music' aria-hidden='true'></span> "
+              + reading.Type + "</h2>" + "<hr/>");
+          } else {
+            $('#readings').append("<h2>" + "<span class='glyphicon glyphicon-book' aria-hidden='true'></span> "
+              + reading.Type + "</h2>" + "<hr/>");
+          }
+
           $('#readings').append("<h3>" + reading.Citations[0].Reference + "</h3>");
           $('#readings').append("<p id='" + reading.Type.split(" ").join("") + "'></p>");
           $.fn.getScripture(reading);
         }
 
         $('#dateText').empty();
-        $('#dateText').append(days[today.getDay()] + ", " + months[today.getMonth()] + " " + today.getDate());
+        $('#dateText').append("<h2>" + days[today.getDay()] + ", "
+          + months[today.getMonth()] + " " + today.getDate() + "</h2>");
         $('#dateTitle').empty();
-        $('#dateTitle').append(title);
+        $('#dateTitle').append('<h2 data-toggle="tooltip" style="z-index:1000; position:relative" title="testing">' + title + '</h2>');
         $('#title').css("color", color);
+
+        $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
       },
       error: function() {}
     });
@@ -55,7 +70,6 @@ jQuery.fn.getScripture = function (reading) {
       url: "https://bible-api.com/" + passages,
       success: function(resp) {
         $('#' + reading.Type.split(" ").join("")).append(resp.text);
-        console.log(resp.text);
       },
       error: function() {}
     });
