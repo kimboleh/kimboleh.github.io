@@ -1,6 +1,6 @@
 var today = new Date();
 var year = today.getFullYear();
-var month = today.getMonth() + 1;
+var month = today.getMonth();
 var numericalDay = today.getDate();
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
   "October", "November", "December"];
