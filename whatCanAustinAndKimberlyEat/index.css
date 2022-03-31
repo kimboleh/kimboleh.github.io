@@ -31,16 +31,15 @@ p {
 
 #grid-layout {
   display: grid;
-  grid-template-columns: 325px auto auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   height: 100vh;
   width: 100vw;
 }
 
 #main-content {
-  grid-column-start: 2;
-  grid-column-end: 6;
+  /* grid-column: span 1; */
 
-  margin: 0 50px; /* up right down left */
+  margin-left: 325px; /* up right down left */
   padding: 45px;
   overflow: auto;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -62,9 +61,12 @@ p {
 
 /* SIDEBAR CSS */
 #sidebar {
-  grid-column-start: 1;
-  grid-column-end: 2;
-
+  /* grid-column: span 1; */
+  margin: 0;
+  padding: 0;
+  width: 325px;
+  position: fixed;
+  height: 100%;
   vertical-align: top;
   box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.4);
   text-align: center;
@@ -156,6 +158,10 @@ div.sidebar-link:hover {
     width: 100%;
     height: auto;
     position: relative;
+  }
+
+  #main-content {
+    margin-left: 0;
   }
 
   .center-p {

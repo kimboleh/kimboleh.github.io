@@ -29,7 +29,7 @@ jQuery.fn.getFastDetails = function () {
 
         if (resp.fast_level !== 0) {
           setFastDetails(resp, resp.fast_exception);
-          $('#fasting').append("Kimberly & Austin are participating in the <strong>"
+          $('#fasting').append("Austin & Kimberly are participating in the <strong>"
             + fast + "</strong> right now, which means <em>" + fastDetails + "</em>.");
         }
       },
@@ -61,3 +61,8 @@ function setFastDetails() {
     }
   }
 };
+
+/**
+ * Special thanks to
+ * https://orthocal.info/api
+ */
