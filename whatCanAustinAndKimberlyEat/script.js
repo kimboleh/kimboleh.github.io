@@ -30,7 +30,9 @@ jQuery.fn.getFastDetails = function () {
         if (resp.fast_level !== 0) {
           setFastDetails(resp, resp.fast_exception);
           $('#fasting').append("Austin & Kimberly are participating in the <strong>"
-            + fast + "</strong> right now, which means <em>" + fastDetails + "</em>.");
+            + fast + "</strong> right now, " + fastDetails + "</em>.");
+        } else {
+          $('#fasting').append("Anything they want! Today's a non-fasting day.");
         }
       },
       error: function() {}
@@ -42,23 +44,26 @@ function setFastDetails() {
     fast = "regular Wednesday & Friday fasting";
   } else if (apiDay.titles[0].includes("Cheesefare")) {
     fast = "week of Cheesefare";
-    fastDetails = "no meat</em>. Since it's only a <strong>Meat Fast</strong>, <em>fish, dairy, and alcohol are allowed";
+    fastDetails = "no red & white meat</em>. Since it's only a <strong>Meat Fast</strong>, <em>fish, dairy, and alcohol are fine";
   } else {
     fast = apiDay.fast_level_desc;
   }
 
+  <!-- main fast details -->
   if (fast != "week of Cheesefare" &&
-      (fast == "Lenten Fast" || apiDay.fast_level_desc == "Fast")) {
-    fastDetails = "no meat, no dairy, and no alcohol";
-    switch (apiDay.fast_exception) {
-      case 2:
-          fastDetails += "</em>. However, today is a <strong>Fish Day</strong>, so both <em>fish and alcohol are allowed";
-          break;
-      case 7:
-          fastDetails += "</em>. However, today is only a <strong>Meat Fast</strong>, so <em>fish, dairy, and alcohol are allowed";
-          break;
+      (fast == "Lenten Fast" || fast == "Nativity Fast" || apiDay.fast_level_desc == "Fast")) {
+    fastDetails = "which means <em>no meat, no dairy, and no alcohol";
+  }
 
-    }
+  <!-- exceptions -->
+  switch (apiDay.fast_exception) {
+    case 2:
+        fastDetails = "but today is a <strong>Fish Day</strong>, so only <em>red & white meat and dairy are off-limits</em>";
+        break;
+    case 7:
+        fastDetails = "but today is only a <strong>Meat Fast</strong>, so <em>only red & white meats are off-limits</em>";
+        break;
+
   }
 };
 
