@@ -52,7 +52,7 @@ function setFastDetails() {
   <!-- main fast details -->
   if (fast != "week of Cheesefare" &&
       (fast == "Lenten Fast" || fast == "Nativity Fast" || apiDay.fast_level_desc == "Fast")) {
-    fastDetails = "which means <em>no meat, no dairy, and no alcohol";
+    fastDetails = "which means <em>no meat, no dairy, and no alcohol</em>";
   }
 
   <!-- exceptions -->
