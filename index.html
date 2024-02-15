@@ -1,132 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="Kimberly's GitHub Page"
-      content="HTML & CSS webpage hosted on GitHub Pages"
-    />
-    <title>Kimberly's GitHub Page</title>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="img/favicon.ico" />
+        <link rel="stylesheet" href="index.css">
+        <script type="application/javascript" src="index.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="Kimberly Nachbur Web Development Portfolio"
+            content="Kimberly Nachbur's web development and design portfolio."
+        />
+        <title>Kimberly Nachbur | Portfolio</title>
+    </head>
 
-  <body>
-    <div id="grid-layout">
+    <body>
 
-      <!-- SIDEBAR -->
-      <div id="sidebar">
-        <h1>kimberly horton</h1>
-        <h2>GitHub Pages Home</h2>
-        <a href="/"><div class="sidebar-link sidebar-current">Home</div></a>
-        <a href="gcsp/gcsp.html"><div class="sidebar-link">GCSP</div></a>
-        <h2>CSIS304 Projects</h2>
-        <a href="culture/index.html"><div class="sidebar-link">1: Culture</div></a>
-        <a href="zenGarden/index.html"><div class="sidebar-link">2: Zen Garden</div></a>
-        <a href="/dnd/"><div class="sidebar-link">3: D&D Combat</div></a>
-        <a href="/dailyReadings/"><div class="sidebar-link">4: Lectionary Readings</div></a>
-      </div>
+        <!-- SIDEBAR -->
 
-      <!-- BODY -->
-      <div id="main-content">
-
-        <div id="welcome-splash" class="center-p">
-          <h1>Welcome to my GitHub Pages!</h1>
-          <p>My name is Kimberly Horton, and I'm a Computer Science student at George Fox University.</p>
-          <p>This site, while a work in progress, is currently serving as a portfolio for my CSIS304 class,
-            <em>Web-Based Programming</em>. Below you'll find some of my skills and projects, and to the
-            left in the sidebar you'll find links to each page of my class portfolio!</p>
-        </div>
-
-        <div id="tabs" class="tabs">
-          <input type="radio" name="tabs" id="welcome" checked="checked">
-          <label class="tab-label" for="welcome">About Me</label>
-          <div class="tab">
-            <p>Hello, World!</p>
-            <hr>
-            <p>Coding Experience:</p>
-              <ul>
-                <li>Java</li>
-                  <ul><li class="sub-li">JavaFX</li></ul>
-                <li>Kotlin</li>
-                  <ul><li class="sub-li">TornadoFX</li></ul>
-                <li>Scala</li>
-                <li>Python</li>
-                  <ul><li class="sub-li">SciKitLearn</li></ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                  <ul><li class="sub-li">ReactJS</li>
-                  <li class="sub-li">Node.js</li></ul>
-              </ul>
-          </div>
-
-          <input type="radio" name="tabs" id="portfolio">
-          <label class="tab-label" for="portfolio">Portfolio</label>
-          <div class="tab">
-            <h1>Projects I've Worked On:</h1>
-
-            <div class="codepen">
-              <!-- ISS in CSS -->
-              <h2>ISS in CSS</h2>
-              <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="k-horton" data-slug-hash="ajrMJw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ISS in CSS">
-              <span>See the Pen <a href="https://codepen.io/k-horton/pen/ajrMJw">
-          ISS in CSS</a> by Kimberly Horton (<a href="https://codepen.io/k-horton">@k-horton</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <hr>
-
-              <!-- Wikipedia Searcher -->
-              <h2>Wikipedia Reader</h2>
-              <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="k-horton" data-slug-hash="MXWgbP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Wikipedia Viewer">
-              <span>See the Pen <a href="https://codepen.io/k-horton/pen/MXWgbP">
-          Wikipedia Viewer</a> by Kimberly Horton (<a href="https://codepen.io/k-horton">@k-horton</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <hr>
-
-              <!-- Weather -->
-              <h2>Weather App</h2>
-              <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="k-horton" data-slug-hash="OZqzWo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Weather or Not">
-                <span>See the Pen <a href="https://codepen.io/k-horton/pen/OZqzWo">
-          Weather or Not</a> by Kimberly Horton (<a href="https://codepen.io/k-horton">@k-horton</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <!-- TOP HERO -->
+        <div id="main-hero">
+            <div id="hero-left">
+                <div id="hero-title">
+                    <h1>Hey there.</h1>
+                    <h1>I'm Kimberly Nachbur, <br/><span id="description-tags"><span id="webdev">web developer</span>, <span id="swe">software engineer</span>, & <span id="uxd">interface designer</span>.</span></h1>
+                </div>
             </div>
-          </div>
-
-          <input type="radio" name="tabs" id="contact-me">
-          <label class="tab-label" for="contact-me">Contact Me</label>
-          <div class="tab">
-            <h1>Contact Me</h1>
-
-            <form method="POST" action="http://jorr.cs.georgefox.edu/resources/php/echo-form.php">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name"><br><br>
-
-              <label for="email">Email:</label>
-              <input type="text" id="email" name="email"><br><br>
-
-              <label for="message">Message:</label>
-              <input type="text" id="message" name="message"><br><br>
-
-              <button type="submit">Submit</button>
-            </form>
-
-          </div>
+            <div id="hero-right">
+                <img src="img\hero-image.jpg" alt="Kimberly Nachbur, a white woman with curly red hair, stands in a forest next to a trailhead sign. She is looking to the left, and she is wearing a green beanie, black rain jacket, black jeans, and a graphic t-shirt." />
+            </div>
         </div>
-      </div>
+        <!-- ABOUT ME HERO-->
+        <div id="about-me">
+            <div id="about-left">
+                <div id="about-text">
+                    <h2>a little about me</h2>
+                    <p>Nice to meet you - I'm Kimberly, a developer in Portland, OR who's passionate about building things for the web that are fun, functional, and user-friendly!</p>
+                    <p>One of my prized possessions is a small book titled "Make Your Own Web Page! A Guide For Kids"; it's where, at the age of six, I first learned the basics of HTML and web design.</p>
+                    <p>I've come a long way since my 90s HTML page days, but digital tools that are both functional and visually appealing have been what I've loved coming back to work on most. From <a href="https://www.graphicalanalysis.app/">science classroom software</a> to <a href="https://www.meatandright.com/">handy web tools</a>, I love working on projects that serve people & look good doing it. </p>
+                </div>
+            </div>
+            <div id="about-right">
+                <div id="skill-lists" onclick="switchList(event)">
+                    <h2>what I'm good at</h2>
+                    <div id="list-container">
+                        <ul id="list-1" class="active-list">
+                            <li>JavaScript & TypeScript</li>
+                            <li>React.js</li>
+                            <li>Node</li>
+                            <li>LitElement & Web Components</li><br/>
 
-      <!-- BOTTOM LEFT ICONS -->
-      <div class="icon-bar">
-        <a href="https://www.linkedin.com/in/kimberly-anne/"><img src="img/linkedin.png" alt="linkedin logo icon"></a>
-        <a href="https://github.com/k-horton"><img src="img/github.png" alt="github logo icon"></a>
-        <a href="mailto:kimberlyannehorton@gmail.com"><img src="img/email.png" alt="email envelope icon"></a>
-      </div>
-      <div id="monika">anVzdCBtb25pa2Eu</div>
-    </div>
+                            <li>HTML/CSS</li>
+                            <li>SCSS & SASS</li>
+                            <li>PHP</li>
+                            <li>Web Content Accessibility Guidelines (WCAG)</li><br/>
+
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>C/C++</li>
+                            <li>Python</li>
+                        </ul>
+                        <ul id="list-2" class="inactive-list">
+                            <li>Git & SVN</li>
+                            <li>GitHub</li>
+                            <li>Bitbucket</li><br/>
+
+                            <li>Storybook</li>
+                            <li>Figma</li>
+                            <li>AdobeXD</li><br/>
+
+                            <li>User Experience Design</li>
+                            <li>Design Systems</li><br/>
+
+                            <li>Public Speaking & Presenting</li>
+                            <li>Communicating to Diverse Audiences</li>
+                            <li>Documentation & Technical Writing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="trees">
+                    <img src="img/tree-fill.svg" alt="taller silhouette of a pine tree" id="tree-1"/><img src="img/tree-fill.svg" alt="shorter silhouette of a pine tree" id="tree-2"/>
+                </div>
+            </div>
+            
+        </div>
     </body>
 </html>

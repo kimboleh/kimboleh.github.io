@@ -1,23 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
-:root {
-  /* CSS HEX */
-  --opal: #a7c5c1;
-  --new-york-pink: #cd8987;
-  --english-violet: #4d2d52;
-  --deep-space-sparkle: #4d6a6d;
-  --saffron: #e1bc29;
-  --off-white: #FFFFFF;
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  margin: 0;
+  font-family: "Istok Web", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-#tabs {
-  max-width: 50%;
+#main-hero {
+  background-color: #30251D;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+#main-hero #hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  vertical-align: middle;
+  padding: 3em;
+  width: 50%;
+}
+#main-hero #hero-left #hero-title {
   margin: auto;
+  max-width: 500px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#main-hero #hero-left #hero-title #description-tags {
+  font-size: 30px;
+}
+#main-hero #hero-left #hero-title #webdev {
+  color: #988E37;
+}
+#main-hero #hero-left #hero-title #swe {
+  color: #C97140;
+}
+#main-hero #hero-left #hero-title #uxd {
+  color: #849AA8;
+}
+#main-hero #hero-right {
+  align-items: center;
+  direction: rtl;
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+}
+#main-hero #hero-right img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-#welcome-splash {
-  margin: 20px auto;
-  max-width: 60%;
+#about-me {
+  background-color: #C6CCCC;
+  color: #30251D;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+}
+#about-me h2 {
+  font-size: 24pt;
+}
+#about-me a {
+  color: #C97140;
+  text-decoration: none;
+}
+#about-me a:visited {
+  color: #988E37;
+}
+#about-me a:hover {
+  color: #849AA8;
+  text-decoration: underline;
+}
+#about-me p {
+  font-weight: 600;
+}
+#about-me ul {
+  font-size: 11pt;
+  font-weight: 600;
+  list-style-type: none;
+  padding: 0;
+}
+#about-me #about-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  width: 60%;
+}
+#about-me #about-left #about-text {
+  margin: 8em auto;
+  max-width: 550px;
+}
+#about-me #about-right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 50px;
+  width: 40%;
+}
+#about-me #about-right #skill-lists {
+  margin: 8em 0;
+}
+#about-me #about-right #skill-lists #list-2 {
+  display: none; /* still working out how to animate this! */
+}
+#about-me #about-right #trees {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 15%;
+  height: auto;
+  line-height: 0;
+}
+#about-me #about-right #trees #tree-1 {
+  height: 100px;
+}
+#about-me #about-right #trees #tree-2 {
+  height: 75px;
 }
 
 #monika {
@@ -26,76 +128,4 @@
   bottom: 0;
   right: 0;
   position: fixed;
-}
-
-.icon-bar {
-  position: fixed;
-  padding-left: 3px;
-  padding-bottom: 3px;
-  bottom: 0;
-  left: 0;
-}
-
-.sub-li {
-  font-size: 10pt;
-}
-
-.codepen {
-  max-width: 500px;
-  margin: auto;
-}
-
-
-
-/* TABS CSS
- * big thanks to mikestreety on CodePen
- * for the basis of this tab system!
- * https://codepen.io/mikestreety/pen/yVNNNm */
-.tabs {
-	display: flex;
-	flex-wrap: wrap; /* make sure it wraps */
-}
-.tabs .tab-label {
-	order: 1; /* Put the labels first */
-	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
-  border-radius: 25px 25px 0px 0px;
-	cursor: pointer;
-  background: var(--deep-space-sparkle);
-  color: var(--off-white);
-  font-weight: bold;
-  transition: background ease 0.2s;
-}
-.tabs .tab {
-  order: 99; /* Put the tabs last */
-  flex-grow: 1;
-	width: 100%;
-	display: none;
-  padding: 1rem;
-  background: var(--off-white);
-  border-radius: 0px 25px 25px 25px;
-}
-.tabs input[type="radio"] {
-	display: none;
-}
-.tabs input[type="radio"]:checked + label {
-	background: #fff;
-  color: #000000;
-  border-radius: 25px 25px 0px 0px;
-}
-.tabs input[type="radio"]:checked + label + .tab {
-	display: block;
-}
-
-@media (max-width: 45em) {
-  .tabs .tab,
-  .tabs label {
-    order: initial;
-  }
-  .tabs label {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 0.2rem;
-  }
-}
+}/*# sourceMappingURL=index.css.map */
