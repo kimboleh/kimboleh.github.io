@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 #main-hero #hero-left {
   display: flex;
@@ -49,7 +49,7 @@ body {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 #main-hero #hero-right #photo-credit {
   direction: ltr;
@@ -131,10 +131,48 @@ body {
   height: 75px;
 }
 
-#monika {
-  opacity: 0.5;
-  font-size: 8pt;
-  bottom: 0;
-  right: 0;
-  position: fixed;
+/* MOBILE */
+@media screen and (max-width: 800px) {
+  #main-hero, #about-me {
+    flex-direction: column;
+  }
+  #main-hero #hero-right, #main-hero #hero-left {
+    width: 100%;
+  }
+  #main-hero #hero-left {
+    padding: 10px;
+    margin: auto;
+  }
+  #main-hero #hero-right img {
+    width: 100%;
+    height: auto;
+  }
+  #main-hero #hero-right #photo-credit {
+    display: none; /* temporary workaround - Blaine needs credit!! */
+  }
+  #about-me #about-right, #about-me #about-left {
+    width: auto;
+    padding: 0 50px;
+  }
+  #about-me #about-left {
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+  #about-me #about-left #about-text {
+    margin: 0;
+    max-width: 100%;
+  }
+  #about-me #about-right h2 {
+    margin: 0;
+  }
+  #about-me #about-right #skill-lists {
+    width: auto;
+    margin: auto 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  #about-me #about-right, #about-me #about-left {
+    width: auto;
+    padding: 0 20px;
+  }
 }/*# sourceMappingURL=index.css.map */
