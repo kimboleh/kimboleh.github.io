@@ -53,6 +53,16 @@ body {
             height: 100vh;
             object-fit: cover;
         }
+
+        #photo-credit {
+            direction: ltr;
+            opacity: 0.5;
+            font-size: 8pt;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            padding-right: 3px;
+          }
     }
 }
 
