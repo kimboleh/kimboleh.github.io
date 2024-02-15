@@ -1,30 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
 
 $deepBrown: #30251D;
 $rust: #C97140;
 $lightGreen: #988E37;
+$forestGreen: #42432D;
 $softBlue: #849AA8;
 $paleGrey: #C6CCCC;
+$white: #FFFFF3;
+
+$handwriting: 'Just Me Again Down Here';
+$default-font: 'Istok Web';
 
 body { 
     margin: 0; 
-    font-family: 'Istok Web', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-family: $default-font, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
+
+h2 { margin: 0; }
 
 #main-hero {
     background-color: $deepBrown;
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    width: 100vw;
     min-height: 100vh;
+    width: 100vw;
 
     #hero-left {
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        vertical-align: middle;
         padding: 3em;
+        vertical-align: middle;
         width: 50%;
 
         #hero-title {
@@ -49,19 +57,19 @@ body {
         overflow: hidden;
         width: 50%;
         img {
-            width: 100%;
             height: 100vh;
             object-fit: cover;
+            width: 100%;
         }
 
         #photo-credit {
-            direction: ltr;
-            opacity: 0.5;
-            font-size: 8pt;
             bottom: 0;
-            right: 0;
-            position: absolute;
+            direction: ltr;
+            font-size: 8pt;
+            opacity: 0.5;
             padding-right: 3px;
+            position: absolute;
+            right: 0;
         }
     }
 }
@@ -71,8 +79,8 @@ body {
     color: $deepBrown;
     display: flex;
     flex-direction: row;
-    width: 100vw;
     min-height: 100vh;
+    width: 100vw;
 
     h2 { font-size: 24pt; }
 
@@ -100,9 +108,9 @@ body {
     }
 
     #about-left {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 0 50px;
         width: 60%;
 
@@ -115,8 +123,8 @@ body {
     #about-right {
         display: flex;
         flex-direction: column;
-        position: relative;
         padding: 0 50px;
+        position: relative;
         width: 40%;
 
         #skill-lists {
@@ -128,12 +136,12 @@ body {
         }
 
         #trees {
-            position: absolute;
             bottom: 0;
-            right: 0;
-            margin-right: 15%;
             height: auto;
             line-height: 0;
+            margin-right: 15%;
+            position: absolute;
+            right: 0;
 
             #tree-1 {
                 height: 100px;
@@ -143,6 +151,119 @@ body {
                 height: 75px;
             }
         }
+    }
+}
+
+#projects-section {
+    align-items: center;
+    background-color: #42432D;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    h2 {
+        font-size: 24pt;
+        padding: 2rem 0; /* top-bottom, left-right */
+    }
+
+    #project-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px; /* row gap, column gap */
+        justify-content: center;
+        margin: auto;
+        max-width: 1000px;
+    }
+}
+
+/* FOOTER */
+#footer {
+    color: $paleGrey;
+    display: flex;
+    align-items: center;
+    font-family: $handwriting;
+    justify-content: space-between;
+    background-color: $deepBrown;
+    height: 100px;
+
+    .icon-bar {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .credits {
+        padding: 0 10px;
+        margin: 0;
+    }
+}
+
+/* CARD STYLES & ANIMATION */
+.card {
+    background-color: transparent;
+    height: 240px;
+    perspective: 1000px;
+    width: 250px;
+
+    p { margin: 0; }
+
+    .card-inner {
+        align-items: center;
+        background-color: $paleGrey;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px $deepBrown; /* offset-x | offset-y | blur-radius | color */
+        color: $deepBrown;
+        display: flex;
+        flex-direction: column;
+        font-family: $handwriting;
+        font-size: 24pt;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        transform-style: preserve-3d;
+        transition: transform 0.8s;
+        width: 100%;
+    }
+
+    &:hover .card-inner {
+        transform: rotateY(180deg); /* rotate card on hover */
+    }
+
+    .card-front, .card-back {
+        backface-visibility: hidden;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    /* Style the front side */
+    .card-front {
+        h3 {
+            margin: 0;
+        }
+    
+        .card-img {
+            height: 150px;
+            height: 60%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding-top: 20px;
+            width: 200px;
+    
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    /* Style the back side */
+    .card-back {
+        background-color: $paleGrey;
+        transform: rotateY(180deg);
     }
 }
 
@@ -175,7 +296,6 @@ body {
             #about-text { margin: 0; max-width: 100%; }
         }
         #about-right {
-            h2 { margin: 0; }
             #skill-lists { width: auto; margin: auto 0; }
         }
     }
