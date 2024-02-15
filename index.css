@@ -49,7 +49,7 @@ body {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #main-hero #hero-right #photo-credit {
   direction: ltr;
