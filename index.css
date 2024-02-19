@@ -190,7 +190,9 @@ h2 {
   /* Style the back side */
 }
 .card p {
-  margin: 0;
+  font-size: 18pt;
+  line-height: 1;
+  margin: 0 10px;
 }
 .card .card-inner {
   align-items: center;
