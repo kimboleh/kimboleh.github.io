@@ -3,10 +3,12 @@
 body {
   margin: 0;
   font-family: "Istok Web", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
 }
 
 h2 {
   margin: 0;
+  font-size: 32px;
 }
 
 #main-hero {
@@ -32,7 +34,7 @@ h2 {
   width: fit-content;
 }
 #main-hero #hero-left #hero-title #description-tags {
-  font-size: 30px;
+  font-size: 32px;
 }
 #main-hero #hero-left #hero-title #webdev {
   color: #988E37;
@@ -73,9 +75,6 @@ h2 {
   flex-direction: row;
   min-height: 100vh;
   width: 100vw;
-}
-#about-me h2 {
-  font-size: 24pt;
 }
 #about-me a {
   color: #C97140;
@@ -145,7 +144,6 @@ h2 {
   padding-bottom: 50px;
 }
 #projects-section h2 {
-  font-size: 24pt;
   padding: 2rem 0; /* top-bottom, left-right */
 }
 #projects-section #project-cards {
@@ -248,7 +246,7 @@ h2 {
     width: 100%;
   }
   #main-hero #hero-left {
-    padding: 10px;
+    padding: 20px;
     margin: auto;
   }
   #main-hero #hero-right img {
@@ -260,7 +258,7 @@ h2 {
   }
   #about-me #about-right, #about-me #about-left {
     width: auto;
-    padding: 0 50px;
+    padding: 20px 50px;
   }
   #about-me #about-left {
     align-items: flex-start;
@@ -278,6 +276,6 @@ h2 {
 @media screen and (max-width: 450px) {
   #about-me #about-right, #about-me #about-left {
     width: auto;
-    padding: 0 20px;
+    padding: 20px;
   }
 }/*# sourceMappingURL=index.css.map */
