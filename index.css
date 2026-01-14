@@ -220,28 +220,28 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .card .card-front .title {
   width: 100%;
+  padding: 5px 0 10px 0;
 }
 .card .card-front .title h3 {
   font-size: 32px;
   line-height: 1.5;
   overflow: hidden;
   margin: 0;
-  padding-bottom: 25px;
 }
 .card .card-front .card-content {
   width: 200px;
-  aspect-ratio: 6/5;
-  margin: 20px auto;
+  aspect-ratio: 1/1;
+  margin: 20px auto 0 auto;
   overflow: hidden;
 }
 .card .card-front .card-content img {
   height: 100%;
   width: 100%;
-  object-position: center top;
+  object-position: left top;
   object-fit: cover;
 }
 .card .card-back {
