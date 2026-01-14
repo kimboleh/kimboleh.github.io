@@ -206,9 +206,9 @@ h2 {
 /* CARD STYLES & ANIMATION */
 .card {
     background-color: transparent;
-    height: 240px;
     perspective: 1000px;
     width: 250px;
+    height: 250px;
 
     p {
         font-size: 18pt;
@@ -224,8 +224,10 @@ h2 {
         color: $deepBrown;
         display: flex;
         flex-direction: column;
+
         font-family: $handwriting;
-        font-size: 24pt;
+        font-size: 20pt;
+
         height: 100%;
         position: relative;
         text-align: center;
@@ -247,20 +249,34 @@ h2 {
 
     /* Style the front side */
     .card-front {
-        h3 {
-            margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            width: 100%;
+
+            h3 {
+                font-size: 32px;
+                line-height: 1.5;
+                overflow: hidden;
+                margin: 0;
+                padding-bottom: 25px;
+            }
         }
     
-        .card-img {
-            height: 150px;
-            height: 60%;
-            margin: 0 auto;
-            overflow: hidden;
-            padding-top: 20px;
+        .card-content {
             width: 200px;
+            aspect-ratio: 6 / 5;
+            margin: 20px auto;
+            overflow: hidden;
     
             img {
                 height: 100%;
+                width: 100%;
+                object-position: center top;
+                object-fit: cover;
             }
         }
     }
