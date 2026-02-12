@@ -16,7 +16,7 @@
         },
         {
             "name": "emergent RPG",
-            "description": "Website for an independent tabletop roleplaying game launching in late 2024",
+            "description": "Website for an independent tabletop roleplaying game, released in late 2024",
             "screenshot": "img/emergentrpg.png",
             "technologies": ["HTML", "CSS", "JavaScript", "React"],
             "link": "http://emergentrpg.com"
@@ -30,7 +30,7 @@
         },
         {
             "name": "video analysis",
-            "description": "PWA for science classrooms that analyzes data collected from videos",
+            "description": "PWA for science classrooms that processes data collected from videos",
             "screenshot": "img/va.png",
             "technologies": ["LitElement", "JavaScript", "CSS"],
             "link": "https://videoanalysis.app/"
