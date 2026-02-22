@@ -1,5 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap");
+/**
+ * GLOBAL STYLES FILE
+*/
+/**
+ * ISTOK WEB
+ */
+@font-face {
+  font-family: "Istok Web";
+  src: url("src/fonts/Istok_Web/IstokWeb-Regular.ttf");
+}
+@font-face {
+  font-family: "Istok Web";
+  src: url("src/fonts/Istok_Web/IstokWeb-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Istok Web";
+  src: url("src/fonts/Istok_Web/IstokWeb-Italic.ttf");
+  font-weight: italic;
+}
+@font-face {
+  font-family: "Istok Web";
+  src: url("src/fonts/Istok_Web/IstokWeb-BoldItalic.ttf");
+  font-weight: bold italic;
+}
+/**
+ * Just Me Again Down Here
+ * (handwriting font)
+ */
+@font-face {
+  font-family: "Just Me Again Down Here";
+  src: url("src/fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf");
+}
+/**
+ * Silkscreen
+ * (pixel font)
+ */
+@font-face {
+  font-family: "Silkscreen";
+  src: url("src/fonts/Silkscreen/Silkscreen-Regular.ttf");
+}
+@font-face {
+  font-family: "Silkscreen";
+  src: url("src/fonts/Silkscreen/Silkscreen-Bold.ttf");
+  font-weight: bold;
+}
 body {
   margin: 0;
   font-family: "Istok Web", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -11,292 +55,6 @@ h2 {
   font-size: 32px;
 }
 
-#main-hero {
-  background-color: #30251D;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-  width: 100vw;
-}
-#main-hero #hero-left {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  padding: 3em;
-  vertical-align: middle;
-  width: 50%;
-}
-#main-hero #hero-left #hero-title {
-  margin: auto;
-  max-width: 500px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#main-hero #hero-left #hero-title #description-tags {
-  font-size: 32px;
-}
-#main-hero #hero-left #hero-title #webdev {
-  color: #988E37;
-}
-#main-hero #hero-left #hero-title #swe {
-  color: #C97140;
-}
-#main-hero #hero-left #hero-title #uxd {
-  color: #849AA8;
-}
-#main-hero #hero-right {
-  align-items: center;
-  direction: rtl;
-  display: flex;
-  overflow: hidden;
-  width: 50%;
-}
-#main-hero #hero-right img {
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-#main-hero #hero-right #photo-credit {
-  bottom: 0;
-  direction: ltr;
-  font-size: 8pt;
-  opacity: 0.5;
-  padding-right: 3px;
-  position: absolute;
-  right: 0;
-}
-
-#about-me {
-  background-color: #C6CCCC;
-  color: #30251D;
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-  width: 100vw;
-}
-#about-me a {
-  color: #C97140;
-  text-decoration: none;
-}
-#about-me a:visited {
-  color: #988E37;
-}
-#about-me a:hover {
-  color: #849AA8;
-  text-decoration: underline;
-}
-#about-me p {
-  font-weight: 600;
-}
-#about-me ul {
-  font-size: 11pt;
-  font-weight: 600;
-  list-style-type: none;
-  padding: 0;
-}
-#about-me #about-left {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px;
-  width: 60%;
-}
-#about-me #about-left #about-text {
-  margin: 8em auto;
-  max-width: 550px;
-}
-#about-me #about-right {
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px;
-  position: relative;
-  width: 40%;
-}
-#about-me #about-right #skill-lists {
-  margin: 8em 0;
-}
-#about-me #about-right #skill-lists #list-2 {
-  display: none; /* still working out how to animate this! */
-}
-#about-me #about-right #trees {
-  bottom: 0;
-  height: auto;
-  line-height: 0;
-  margin-right: 15%;
-  position: absolute;
-  right: 0;
-}
-#about-me #about-right #trees #tree-1 {
-  height: 100px;
-}
-#about-me #about-right #trees #tree-2 {
-  height: 75px;
-}
-
-#projects-section {
-  align-items: center;
-  background-color: #42432D;
-  color: #FFFFF3;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-}
-#projects-section h2 {
-  padding: 2rem 0; /* top-bottom, left-right */
-}
-#projects-section #project-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 50px; /* row gap, column gap */
-  justify-content: center;
-  margin: auto;
-  max-width: 1000px;
-}
-
-/* FOOTER */
-#footer {
-  color: #C6CCCC;
-  display: flex;
-  align-items: center;
-  font-family: "Just Me Again Down Here";
-  justify-content: space-between;
-  background-color: #42432D;
-  height: 100px;
-}
-#footer .icon-bar {
-  width: 100px;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-#footer .credits {
-  padding: 0 10px;
-  margin: 0;
-}
-
-/* CARD STYLES & ANIMATION */
-.card {
-  background-color: transparent;
-  perspective: 1000px;
-  width: 250px;
-  height: 250px;
-}
-.card p {
-  font-size: 18pt;
-  line-height: 1;
-  margin: 0 10px;
-}
-.card .card-inner {
-  align-items: center;
-  background-color: #C6CCCC;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px #30251D; /* offset-x | offset-y | blur-radius | color */
-  color: #30251D;
-  display: flex;
-  flex-direction: column;
-  font-family: "Just Me Again Down Here";
-  font-size: 20pt;
-  height: 100%;
-  position: relative;
-  text-align: center;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-  width: 100%;
-}
-.card:hover .card-inner {
-  transform: rotateY(180deg); /* rotate card on hover */
-}
-.card .card-front, .card .card-back {
-  backface-visibility: hidden;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.card {
-  /* Style the front side */
-}
-.card .card-front {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.card .card-front .title {
-  width: 100%;
-  padding: 5px 0 10px 0;
-}
-.card .card-front .title h3 {
-  font-size: 32px;
-  line-height: 1.5;
-  overflow: hidden;
-  margin: 0;
-}
-.card .card-front .card-content {
-  width: 200px;
-  aspect-ratio: 1/1;
-  margin: 20px auto 0 auto;
-  overflow: hidden;
-}
-.card .card-front .card-content img {
-  height: 100%;
-  width: 100%;
-  -o-object-position: left top;
-     object-position: left top;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card {
-  /* Style the back side */
-}
-.card .card-back {
-  background-color: #C6CCCC;
-  transform: rotateY(180deg);
-}
-
-/* MOBILE */
-@media screen and (max-width: 800px) {
-  #main-hero, #about-me {
-    flex-direction: column;
-  }
-  #main-hero #hero-right, #main-hero #hero-left {
-    width: 100%;
-  }
-  #main-hero #hero-left {
-    padding: 20px;
-    margin: auto;
-  }
-  #main-hero #hero-right img {
-    width: 100%;
-    height: auto;
-  }
-  #main-hero #hero-right #photo-credit {
-    display: none; /* temporary workaround - Blaine needs credit!! */
-  }
-  #about-me #about-right, #about-me #about-left {
-    width: auto;
-    padding: 20px 50px;
-  }
-  #about-me #about-left {
-    align-items: flex-start;
-    padding-bottom: 20px;
-  }
-  #about-me #about-left #about-text {
-    margin: 0;
-    max-width: 100%;
-  }
-  #about-me #about-right #skill-lists {
-    width: auto;
-    margin: auto 0;
-  }
-}
-@media screen and (max-width: 450px) {
-  #about-me #about-right, #about-me #about-left {
-    width: auto;
-    padding: 20px;
-  }
+.pixel-font {
+  font-family: "Silkscreen", "Courier New", Courier, monospace;
 }/*# sourceMappingURL=index.css.map */
