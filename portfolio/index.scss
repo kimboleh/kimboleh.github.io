@@ -186,12 +186,11 @@ h2 {
     align-items: center;
     font-family: $handwriting;
     justify-content: space-between;
-    background-color: $forestGreen;
+    background-color: $deepBrown;
     height: 100px;
 
     .icon-bar {
-        width: 100px;
-        padding: 20px;
+        width: 200px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
