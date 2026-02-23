@@ -6,21 +6,21 @@
  */
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-Regular.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-Regular.ttf");
 }
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-Bold.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-Italic.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-Italic.ttf");
   font-weight: italic;
 }
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-BoldItalic.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-BoldItalic.ttf");
   font-weight: bold italic;
 }
 /**
@@ -29,7 +29,7 @@
  */
 @font-face {
   font-family: "Just Me Again Down Here";
-  src: url("src/fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf");
+  src: url("../fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf");
 }
 /**
  * Silkscreen
@@ -37,11 +37,11 @@
  */
 @font-face {
   font-family: "Silkscreen";
-  src: url("src/fonts/Silkscreen/Silkscreen-Regular.ttf");
+  src: url("../fonts/Silkscreen/Silkscreen-Regular.ttf");
 }
 @font-face {
   font-family: "Silkscreen";
-  src: url("src/fonts/Silkscreen/Silkscreen-Bold.ttf");
+  src: url("../fonts/Silkscreen/Silkscreen-Bold.ttf");
   font-weight: bold;
 }
 body {
@@ -64,7 +64,7 @@ h2 {
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  height: calc(100vh - 100px);
   width: 100vw;
 }
 #main-hero #hero-left {
@@ -93,6 +93,9 @@ h2 {
 #main-hero #hero-left #hero-title #uxd {
   color: #849AA8;
 }
+#main-hero #hero-left #hero-title .pixel-font {
+  font-size: 20pt;
+}
 #main-hero #hero-right {
   align-items: center;
   direction: rtl;
@@ -112,6 +115,7 @@ h2 {
   font-size: 8pt;
   opacity: 0.5;
   padding-right: 3px;
+  padding-bottom: 100px;
   position: absolute;
   right: 0;
 }
@@ -122,6 +126,7 @@ h2 {
   display: flex;
   align-items: center;
   font-family: "Silkscreen";
+  font-size: 10pt;
   justify-content: space-between;
   background-color: #42432D;
   height: 100px;
@@ -158,4 +163,4 @@ h2 {
   #main-hero #hero-right #photo-credit {
     display: none; /* temporary workaround - Blaine needs credit!! */
   }
-}/*# sourceMappingURL=home.css.map */
+}

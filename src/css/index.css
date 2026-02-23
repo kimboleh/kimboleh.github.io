@@ -6,21 +6,21 @@
  */
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-Regular.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-Regular.ttf");
 }
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-Bold.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-Italic.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-Italic.ttf");
   font-weight: italic;
 }
 @font-face {
   font-family: "Istok Web";
-  src: url("src/fonts/Istok_Web/IstokWeb-BoldItalic.ttf");
+  src: url("../fonts/Istok_Web/IstokWeb-BoldItalic.ttf");
   font-weight: bold italic;
 }
 /**
@@ -29,7 +29,7 @@
  */
 @font-face {
   font-family: "Just Me Again Down Here";
-  src: url("src/fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf");
+  src: url("../fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf");
 }
 /**
  * Silkscreen
@@ -37,11 +37,11 @@
  */
 @font-face {
   font-family: "Silkscreen";
-  src: url("src/fonts/Silkscreen/Silkscreen-Regular.ttf");
+  src: url("../fonts/Silkscreen/Silkscreen-Regular.ttf");
 }
 @font-face {
   font-family: "Silkscreen";
-  src: url("src/fonts/Silkscreen/Silkscreen-Bold.ttf");
+  src: url("../fonts/Silkscreen/Silkscreen-Bold.ttf");
   font-weight: bold;
 }
 body {
@@ -57,4 +57,4 @@ h2 {
 
 .pixel-font {
   font-family: "Silkscreen", "Courier New", Courier, monospace;
-}/*# sourceMappingURL=index.css.map */
+}

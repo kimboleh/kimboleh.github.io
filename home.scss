@@ -5,7 +5,7 @@
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    height: calc(100vh - 100px);
     width: 100vw;
 
     #hero-left {
@@ -28,6 +28,10 @@
             #swe { color: $rust; }
             
             #uxd { color: $softBlue; }
+
+            .pixel-font {
+                font-size: 20pt;
+            }
         }
     }
 
@@ -49,6 +53,7 @@
             font-size: 8pt;
             opacity: 0.5;
             padding-right: 3px;
+            padding-bottom: 100px;
             position: absolute;
             right: 0;
         }
@@ -61,6 +66,7 @@
     display: flex;
     align-items: center;
     font-family: $pixel-font;
+    font-size: 10pt;
     justify-content: space-between;
     background-color: $forestGreen;
     height: 100px;
