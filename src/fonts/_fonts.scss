@@ -6,24 +6,29 @@
 @font-face {
     font-family: 'Istok Web';
     src: url('../fonts/Istok_Web/IstokWeb-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Istok Web';
     src: url('../fonts/Istok_Web/IstokWeb-Bold.ttf');
     font-weight: bold;
+    font-style: oblique;
 }
 
 @font-face {
     font-family: 'Istok Web';
     src: url('../fonts/Istok_Web/IstokWeb-Italic.ttf');
     font-weight: italic;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Istok Web';
     src: url('../fonts/Istok_Web/IstokWeb-BoldItalic.ttf');
-    font-weight: bold italic;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /**
