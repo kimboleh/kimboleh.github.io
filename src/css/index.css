@@ -89,7 +89,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto 20px auto;
+  margin: 40px auto 20px auto;
   border: solid #1C687C;
   border-width: 20px 4px 4px 4px;
   background-color: #E7EFEB;
@@ -98,11 +98,14 @@ a:hover {
   text-align: center;
 }
 #header h1 {
-  margin: 0;
+  font-family: "Silkscreen";
+  font-size: 38px;
+  margin: 10px;
 }
 #header h2 {
   font-family: "Silkscreen";
-  font-size: 16pt;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 #container {
@@ -210,4 +213,12 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 5px;
+}
+
+/* fun audio player */
+audio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

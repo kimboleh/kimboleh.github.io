@@ -5,13 +5,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const bannerHeader = document.createElement("div");
     bannerHeader.id = "header";
     const siteTitle = document.createElement("h1");
-    siteTitle.textContent = "Kimbo's Site";
+    siteTitle.textContent = "Kimboleh.dev";
     const siteSubtitle = document.createElement("h2");
-    siteSubtitle.textContent = "Welcome to my site!";
+    siteSubtitle.textContent = "your mind is filled with thoughts of Internet";
 
     bannerHeader.appendChild(siteTitle);
     bannerHeader.appendChild(siteSubtitle);
     pageBody.insertBefore(bannerHeader, pageBody.firstChild);
+
+    // insert cool audio
+    const whirlingAudio = document.createElement("audio");
+    whirlingAudio.autoplay = "true";
+    whirlingAudio.controls = "true";
+    whirlingAudio.textContent = "Your browser does not support this audio player.";
+    const mp3 = document.createElement("source");
+    mp3.src = "src/assets/whirling_in_rags.mp3";
+    mp3.type = "audio/mpeg";
+    whirlingAudio.appendChild(mp3);
+    pageBody.insertBefore(whirlingAudio, pageBody.firstChild);
 
     // insert menus
     const mainContainer = document.querySelector("#container");
