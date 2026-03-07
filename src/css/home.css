@@ -45,6 +45,9 @@
   font-weight: bold;
 }
 body {
+  background-image: url("../img/textures/blue-gingham-2.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
   margin: 0;
   font-family: "Istok Web", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 18px;
@@ -57,6 +60,70 @@ h2 {
 
 .pixel-font {
   font-family: "Silkscreen", "Courier New", Courier, monospace;
+}
+
+/* LAYOUT */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  background-color: #FFFFF3;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+}
+#header h1 {
+  margin: 0;
+}
+#header h2 {
+  font-family: "Silkscreen";
+  font-size: 16pt;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  position: relative;
+  width: 100vw;
+}
+#container #content {
+  order: 2;
+  margin: 0 auto;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  padding: 20px;
+  flex-grow: 1;
+  max-width: 800px;
+  background-color: #849AA8;
+}
+#container #left-menu {
+  order: 1;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  margin-left: 20px;
+  width: 145px;
+  padding: 5px;
+  text-align: left;
+  background-color: #FFFFF3;
+}
+#container #right-menu {
+  order: 3;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  margin-right: 20px;
+  width: 145px;
+  padding: 5px;
+  text-align: right;
+  background-color: #FFFFF3;
+}
+#container #left-menu ul, #container #right-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 5px;
 }
 
 #main-hero {
