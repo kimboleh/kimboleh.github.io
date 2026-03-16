@@ -19,7 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     whirlingAudio.controls = "true";
     whirlingAudio.textContent = "Your browser does not support this audio player.";
     const mp3 = document.createElement("source");
-    mp3.src = "src/assets/whirling_in_rags.mp3";
+    mp3.src = "";
+    if (window.location.hostname === "127.0.0.1") {
+        mp3.src = "http://" + window.location.hostname + ":5500/src/assets/whirling_in_rags.mp3";
+    } else {
+        mp3.src = "https://" + window.location.hostname + "/src/assets/whirling_in_rags.mp3";
+    }
     mp3.type = "audio/mpeg";
     whirlingAudio.appendChild(mp3);
     pageBody.insertBefore(whirlingAudio, pageBody.firstChild);
@@ -72,19 +77,23 @@ document.addEventListener("DOMContentLoaded", () => {
     rightLinks.innerHTML =
         `
             <ul>
-                <li>Meet My Neighbors!</li>
+                <!--<li>Meet My Neighbors!</li>
                     <ul>
                         <li><a title="olorollo" href="https://olorollo.neocities.org/" target="_blank"><img src="https://olorollo.neocities.org/olorollo-btn.gif"></a></li>
-                    </ul>
+                    </ul> -->
                 <li>Cool Sites</li>
                     <ul>
                         <li><a href="https://www.dragonflycave.com"><img src="../src/img/buttons/tcod.gif" /></a></li>
+                        <li><a title="olorollo" href="https://olorollo.neocities.org/" target="_blank"><img src="https://olorollo.neocities.org/olorollo-btn.gif"></a></li>
                         <li><a href="https://libre.town/"><img src="../src/img/buttons/8834_libretown.gif" /></a></li>
                         <li><a href="https://www.thefrugalgamer.net/"><img src="../src/img/buttons/frugalgamer_button2.png" /></a></li>
                         <li><a href="https://32bit.cafe/"><img src="../src/img/buttons/32bitty-loren.png" /></a></li>
                     </ul>
                 <li>Link my site!</li>
-                <li><img src="../src/img/buttons/kimbositebtn.png" /></li>
+                <li><img src="../src/img/buttons/kimboleh-site-button.gif" /></li>
+                <li>
+                    <textarea><a href="https://kimboleh.dev"><img src="../src/img/buttons/kimboleh-site-button.gif" /></a></textarea>
+                </li>
             </ul>
             <hr>
             <img src="../src/img/buttons/antiai_button.png" />
