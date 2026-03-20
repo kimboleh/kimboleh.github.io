@@ -1,0 +1,42 @@
+@import '../src/sass/sass';
+
+#video-essays {
+    #video--list {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 10px 0;
+            .video-box {
+                border: 2px solid $black;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 20px;
+
+                img {
+                    height: 14vw;
+                    max-height: 200px;
+                }
+
+                .video--details {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    .video--title {
+                        color: $black;
+                        font-size: 20px;
+                        &:hover { color: $mint; }
+                    }
+                    .video--description {
+                        margin-top: 5px;
+                        font-size: 10pt;
+                        p { margin: 0; }
+                    }
+                }
+            }
+        }
+    }
+}

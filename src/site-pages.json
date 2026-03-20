@@ -1,0 +1,20 @@
+{
+    "home": {
+        "url": "/"
+    },
+    "about": {
+        "url": "/about"
+    },
+    "blog": {
+        "url": "/blog"
+    },
+    "curated video essays": {
+        "url": "/video-essays"
+    },
+    "links": {
+        "url": "/links"
+    },
+    "guestbook": {
+        "url": "/guestbook"
+    }
+}

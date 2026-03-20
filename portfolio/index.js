@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
 
     // load in the project cards
-  try {
+try {
     const response = await fetch('./portfolio-projects.json');
     const data = await response.json();
 
@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             addProjectCard(project, projectCards);
         });
     }
-  } catch (err) {
+    } catch (err) {
     console.error("Failed to load projects:", err);
-  }
+    }
 });
 
 function addProjectCard(project, div) {

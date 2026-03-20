@@ -3,35 +3,35 @@
         {
             "name": "Every Child Tennessee",
             "description": "Custom-built WordPress site for a non-profit focused on child welfare support",
-            "screenshot": "img/everychildtn.jpeg",
+            "screenshot": "../img/everychildtn.jpeg",
             "technologies": ["PHP", "WordPress", "JavaScript", "CSS"],
             "link": "http://everychildtn.org"
         },
         {
             "name": "meat & right",
             "description": "A tool for eastern orthodox christians to track their fasting calendar",
-            "screenshot": "img/meatandright.png",
+            "screenshot": "../img/meatandright.png",
             "technologies": ["HTML", "CSS", "JavaScript", "React"],
             "link": "http://meatandright.com"
         },
         {
             "name": "emergent RPG",
             "description": "Website for an independent tabletop roleplaying game, released in late 2024",
-            "screenshot": "img/emergentrpg.png",
+            "screenshot": "../img/emergentrpg.png",
             "technologies": ["HTML", "CSS", "JavaScript", "React"],
             "link": "http://emergentrpg.com"
         },
         {
             "name": "graphical analysis",
             "description": "PWA for science classrooms that connects to measurement tools and displays & processes data",
-            "screenshot": "img/ga.png",
+            "screenshot": "../img/ga.png",
             "technologies": ["LitElement", "JavaScript", "CSS"],
             "link": "https://graphicalanalysis.app"
         },
         {
             "name": "video analysis",
             "description": "PWA for science classrooms that processes data collected from videos",
-            "screenshot": "img/va.png",
+            "screenshot": "../img/va.png",
             "technologies": ["LitElement", "JavaScript", "CSS"],
             "link": "https://videoanalysis.app/"
         }

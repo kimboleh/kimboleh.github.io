@@ -1,0 +1,38 @@
+#video-essays #video--list {
+  list-style-type: none;
+  padding: 0;
+}
+#video-essays #video--list li {
+  padding: 10px 0;
+}
+#video-essays #video--list li .video-box {
+  border: 2px solid #342E37;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#video-essays #video--list li .video-box img {
+  height: 14vw;
+  max-height: 200px;
+}
+#video-essays #video--list li .video-box .video--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#video-essays #video--list li .video-box .video--details .video--title {
+  color: #342E37;
+  font-size: 20px;
+}
+#video-essays #video--list li .video-box .video--details .video--title:hover {
+  color: #A4C3B2;
+}
+#video-essays #video--list li .video-box .video--details .video--description {
+  margin-top: 5px;
+  font-size: 10pt;
+}
+#video-essays #video--list li .video-box .video--details .video--description p {
+  margin: 0;
+}

@@ -1,0 +1,233 @@
+/**
+ * GLOBAL STYLES FILE
+*/
+/**
+ * ISTOK WEB
+ */
+@font-face {
+  font-family: "Istok Web";
+  src: url("../fonts/Istok_Web/IstokWeb-Regular.ttf");
+}
+@font-face {
+  font-family: "Istok Web";
+  src: url("../fonts/Istok_Web/IstokWeb-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Istok Web";
+  src: url("../fonts/Istok_Web/IstokWeb-Italic.ttf");
+  font-weight: italic;
+}
+@font-face {
+  font-family: "Istok Web";
+  src: url("../fonts/Istok_Web/IstokWeb-BoldItalic.ttf");
+  font-weight: bold italic;
+}
+/**
+ * Just Me Again Down Here
+ * (handwriting font)
+ */
+@font-face {
+  font-family: "Just Me Again Down Here";
+  src: url("../fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf");
+}
+/**
+ * Silkscreen
+ * (pixel font)
+ */
+@font-face {
+  font-family: "Silkscreen";
+  src: url("../fonts/Silkscreen/Silkscreen-Regular.ttf");
+}
+@font-face {
+  font-family: "Silkscreen";
+  src: url("../fonts/Silkscreen/Silkscreen-Bold.ttf");
+  font-weight: bold;
+}
+body {
+  background-image: url("../img/textures/blue-gingham-2.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  margin: 0;
+  font-family: "Istok Web", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.pixel-font {
+  font-family: "Silkscreen", "Courier New", Courier, monospace;
+}
+
+/* LAYOUT */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  background-color: #FFFFF3;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+}
+#header h1 {
+  margin: 0;
+}
+#header h2 {
+  font-family: "Silkscreen";
+  font-size: 16pt;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  position: relative;
+  width: 100vw;
+}
+#container #content {
+  order: 2;
+  margin: 0 auto;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  padding: 20px;
+  flex-grow: 1;
+  max-width: 800px;
+  background-color: #849AA8;
+}
+#container #left-menu {
+  order: 1;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  margin-left: 20px;
+  width: 145px;
+  padding: 5px;
+  text-align: left;
+  background-color: #FFFFF3;
+}
+#container #right-menu {
+  order: 3;
+  border: solid #42432D;
+  border-width: 20px 4px 4px 4px;
+  margin-right: 20px;
+  width: 145px;
+  padding: 5px;
+  text-align: right;
+  background-color: #FFFFF3;
+}
+#container #left-menu ul, #container #right-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 5px;
+}
+
+#main-hero {
+  background-color: #30251D;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 100px);
+  width: 100vw;
+}
+#main-hero #hero-left {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  vertical-align: middle;
+  width: 50%;
+}
+#main-hero #hero-left #hero-title {
+  margin: auto;
+  max-width: 500px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#main-hero #hero-left #hero-title #description-tags {
+  font-size: 32px;
+}
+#main-hero #hero-left #hero-title #webdev {
+  color: #988E37;
+}
+#main-hero #hero-left #hero-title #swe {
+  color: #C97140;
+}
+#main-hero #hero-left #hero-title #uxd {
+  color: #849AA8;
+}
+#main-hero #hero-left #hero-title .pixel-font {
+  font-size: 20pt;
+}
+#main-hero #hero-right {
+  align-items: center;
+  direction: rtl;
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+}
+#main-hero #hero-right img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#main-hero #hero-right #photo-credit {
+  bottom: 0;
+  direction: ltr;
+  font-size: 8pt;
+  opacity: 0.5;
+  padding-right: 3px;
+  padding-bottom: 100px;
+  position: absolute;
+  right: 0;
+}
+
+/* FOOTER */
+#footer {
+  color: #C6CCCC;
+  display: flex;
+  align-items: center;
+  font-family: "Silkscreen";
+  font-size: 10pt;
+  justify-content: space-between;
+  background-color: #42432D;
+  height: 100px;
+}
+#footer .icon-bar {
+  width: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer .credits {
+  padding: 0 10px;
+  margin: 0;
+}
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+  #main-hero {
+    flex-direction: column;
+  }
+  #main-hero #hero-right, #main-hero #hero-left {
+    width: 100%;
+  }
+  #main-hero #hero-left {
+    padding: 20px;
+    margin: auto;
+  }
+  #main-hero #hero-right img {
+    width: 100%;
+    height: auto;
+  }
+  #main-hero #hero-right #photo-credit {
+    display: none; /* temporary workaround - Blaine needs credit!! */
+  }
+}
